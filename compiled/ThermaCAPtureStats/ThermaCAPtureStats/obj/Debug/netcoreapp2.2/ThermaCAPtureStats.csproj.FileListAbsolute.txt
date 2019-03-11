@@ -1,0 +1,11 @@
+C:\ps\compiled\ThermaCAPtureStats\ThermaCAPtureStats\bin\Debug\netcoreapp2.2\ThermaCAPtureStats.deps.json
+C:\ps\compiled\ThermaCAPtureStats\ThermaCAPtureStats\bin\Debug\netcoreapp2.2\ThermaCAPtureStats.runtimeconfig.json
+C:\ps\compiled\ThermaCAPtureStats\ThermaCAPtureStats\bin\Debug\netcoreapp2.2\ThermaCAPtureStats.runtimeconfig.dev.json
+C:\ps\compiled\ThermaCAPtureStats\ThermaCAPtureStats\bin\Debug\netcoreapp2.2\ThermaCAPtureStats.dll
+C:\ps\compiled\ThermaCAPtureStats\ThermaCAPtureStats\bin\Debug\netcoreapp2.2\ThermaCAPtureStats.pdb
+C:\ps\compiled\ThermaCAPtureStats\ThermaCAPtureStats\obj\Debug\netcoreapp2.2\ThermaCAPtureStats.csproj.CoreCompileInputs.cache
+C:\ps\compiled\ThermaCAPtureStats\ThermaCAPtureStats\obj\Debug\netcoreapp2.2\ThermaCAPtureStats.AssemblyInfoInputs.cache
+C:\ps\compiled\ThermaCAPtureStats\ThermaCAPtureStats\obj\Debug\netcoreapp2.2\ThermaCAPtureStats.AssemblyInfo.cs
+C:\ps\compiled\ThermaCAPtureStats\ThermaCAPtureStats\obj\Debug\netcoreapp2.2\ThermaCAPtureStats.dll
+C:\ps\compiled\ThermaCAPtureStats\ThermaCAPtureStats\obj\Debug\netcoreapp2.2\ThermaCAPtureStats.pdb
+C:\ps\compiled\ThermaCAPtureStats\ThermaCAPtureStats\obj\Debug\netcoreapp2.2\ThermaCAPtureStats.csprojAssemblyReference.cache
