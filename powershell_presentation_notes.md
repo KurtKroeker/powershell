@@ -3,6 +3,20 @@ Author: Kurt Kroeker
 
 Last Updated: 3/11/2019
 
+## Introduction
+Kurt Kroeker, Sr. Software Developer at EnergyCAP, Inc. for 10 years. I've built A/P, interval data, and bill reformatters, EDI scripts, SQL scripts, workflow scripts for EnergyCAP. So you can tell that I mostly work on the back-end side EnergyCAP software, which is now the place where I am.
+
+Much more comfortable being in front of people when I have a violin, guitar, mandolin, whatever in my hands. 
+
+"When all you have is a hammer, every problem looks like a nail." PowerShell as my Swiss Army Knife, and you just add your own blades over time.
+
+Informal poll: Raise hand if you are a...
+* Rank beginner to Powershell
+* Pretty decent with it
+* You're a PowerShell ninja and want to come up and do this talk for me
+
+That was my last attempt to get out of this presentation. :)
+
 ## Agenda
 * Why should I care about PowerShell?
 * What is PowerShell?
@@ -31,7 +45,8 @@ We mentioned a couple weeks ago that we wanted to reduce dependency on specialis
 - It is EVERYWHERE
     - It's in all versions of Windows since XP    
     - It's in Azure
-        - Deploy ARM templates
+        - Deploy ARM 
+        - Nice suite of built-in PowerShell commands for working with Azure
     - Since August 2016 with PowerShell Core, it's cross-platform and open source
     - It's in EnergyCAP code:
         - Automation scripts built for clients like MDC
@@ -43,9 +58,8 @@ We mentioned a couple weeks ago that we wanted to reduce dependency on specialis
     - C# developers and people familiar with COM objects will enjoy having familiar APIs at their fingertips
 
 ## What is PowerShell?
-- Command-line interface for Microsoft technologies
-- Like cmd.exe on steroids; includes everything I can think of from cmd.exe; access to system environment variables, directory navigation, execution of scripts, file I/O
-- Current version number is version 5.1 (Windows 10)
+- Microsoft's reimagined command-line interface for working with their technologies
+- Like cmd.exe on steroids; includes everything I can think of from cmd.exe; access to system environment variables, directory navigation, execution of scripts, file I/O, interactions with RESTful APIs, PC administration, and much more.
 
 ### Brief History Lesson
 
@@ -58,8 +72,8 @@ By 2002, MS was developing a new CLI called Monad, focused on automating core ad
 That means PowerShell is available as far back as Windows XP. Early versions didn't include cmdlets for Azure and web technologies because they were maturing; I've seen this feature set grow over time. 
 
 13-year-old technology! Not staying stagnant...I learned quite a few things about PowerShell since starting to prepare this presentation! Two of the most interesting changes: 
-- PowerShell Core for all OSs
-- Unit Testing framework that shipped with Windows 10.
+- Unit Testing framework that shipped with Windows 10 (2015)
+- PowerShell Core for all OSs (2016)
 
 ### PowerShell concepts
 
@@ -67,7 +81,9 @@ Now that we have a little historical context out of the way, I want to introduce
 
 - PS Console
 
-Get to it from Start Menu, run interface, cmd.exe
+Get to it from Start Menu, Run interface (Win + r), cmd.exe
+
+`Get-Location` tells you where you are
 
 - commandlets
 
@@ -75,11 +91,18 @@ Commandlets are basically PowerShell functions which encompass programmatic work
 
 Structure of the commands is "Verb-Noun"
 
+E.g `Get-Verb` gets a list of verbs approved for use in PowerShell commands. As you will see, I'm not very consistent with my naming schemes, but hey, I'm getting better.
+
 E.g. `Get-Command` will get you all the available commands in the PowerShell ecosystem. Includes Windows cmdlets, 3rd-party cmdlets, and your custom cmdlets.
 
 If you're good about naming your functions, you can even easily filter the commandlets with the `-Verb` and `-Noun` params to `Get-Command`
 
-`Get-Member`
+`Get-Member` is a useful command to know. If you want to get a list of all the available properties and methods for a PS object, this is what you need.
+
+A couple veeery useful ones:
+`Get-ChildItem`
+`Invoke-SqlCmd`
+`Out-File -encoding UTF8` (BE CAREFUL WITH ENCODING)
 
 - aliases
 
@@ -87,17 +110,35 @@ PowerShell automatically creates aliases for the cmdlets. Many of them have been
 
 E.g. `dir`, `ls`, and `gci` are all aliases for the `Get-ChildItem` cmdlet.
 
+You can create your own aliases with `Set-Alias`
+
 - variables
 
 PowerShell variables are extremely flexible. They are *not* type safe unless you explicitly set the object type during initialization, and even then, PowerShell is happy to convert types for you if a conversion exists.
 
+Here's how you initialize typed variables: [string], [xml]
+
+`
+<response error="">
+    <station name="UNVX" city="University Park" state="PA" country="US" latitude="40.800000" longitude="-77.850000" elevation="1158"/>
+</response>
+`
+
+What are my available variables? Use `Get-Variable`
+
 - script files
+
+Don't type it out every time!
 
 PowerShell scripts are stored in files with a "*.ps1" suffix. They may have code for a single function, or they may be libraries of functions.
 
+You can pass parameters to PS1 files, you can even make them mandatory
+
+`[Mandatory($true)]`
+
 - functions
 
-While you can contain PowerShell code at the file level, you can also declare multiple code functions within a single PS script file. These can be available within a single PS script execution or, when loaded, they can be 
+While you can contain PowerShell code at the file level, you can also declare multiple code functions within a single PS script file. These can be available within a single PS script execution or, when loaded, they can be used over and over again.
 
 `
 function GetRandomNumber()
@@ -107,11 +148,19 @@ function GetRandomNumber()
 }
 `
 
+- pipelines
+
+    "Pipelines act like a series of connected segments of pipe. Items moving along the pipeline pass through each segment." 
+    
+    (source: https://docs.microsoft.com/en-us/powershell/scripting/learn/understanding-the-powershell-pipeline?view=powershell-5.1)
+
 - operators
 
     -eq, -ne, -gt, -like, -and, -or
 
-- pipelines
+    `Where-Object, if()`
+
+    Can use -like with wildcard * character
 
 ## Tips working with PowerShell
 
@@ -150,13 +199,21 @@ PowerShell comes with niceties for working with data in CSV and JSON format:
 `ConvertFrom-CSV` and `ConvertTo-Csv`
 `ConvertFrom-Json` and `ConvertTo-Json`
 
-- Windows PowerShell ISE
+- Love the Windows PowerShell ISE
 
 From Start Menu: "PowerShell ISE"
 
 Nice IDE (or...ISE!) for composing and debugging PowerShell commands. Includes variable inspection, debugging with step-through and step-over, etc.
 
 From PowerShell: `ise` or `powershell_ise`
+
+- Love .NET!
+
+`Add-Type -Path .\EnergyCap.Data.dll`
+
+`$context = New-Object EnergyCap.Data.Entity.EcDbContext "Data Source=devsqlwin01\sql2017;User ID=esuser;Password=e2isnotis;Initial Catalog=vnext_abbvie", 2, 1024`
+
+`$context.SystemUsers | Where-Object { $_.systemUserID -eq 2 }`
 
 ### Gotchas
 
@@ -205,8 +262,11 @@ However, if you use the period, you can *include* the PS1 module for use, if it 
 ## Subjects Not Covered
 - Execution policies
     - I (we?) have RemoteSigned, meaning any code downloaded from the internet will not be executed by accident
-- Advanced Azure resource interactions
+- Azure resource interactions
 - PC user and administrative management
+- GUIs and PowerShell
+- PSCustomObject creation
+- Using external DLL dependencies (Add-Type, .NET [reflection.assembly])
 
 ## Resources
 - Installing PS on macOS: https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6
@@ -219,3 +279,4 @@ However, if you use the period, you can *include* the PS1 module for use, if it 
 - PowerShell dev in VS Code: https://docs.microsoft.com/en-us/powershell/scripting/components/vscode/using-vscode?view=powershell-6
 - Save Excel as CSV: https://michlstechblog.info/blog/powershell-export-excel-workbook-as-csv-file/
 - Setting ExecutionPolicy: https://www.mssqltips.com/sqlservertip/2702/setting-the-powershell-execution-policy/
+- Version of .NET used by PowerShell: https://stackoverflow.com/questions/3344855/which-net-version-is-my-powershell-script-using
