@@ -199,6 +199,8 @@ PowerShell comes with niceties for working with data in CSV and JSON format:
 `ConvertFrom-CSV` and `ConvertTo-Csv`
 `ConvertFrom-Json` and `ConvertTo-Json`
 
+- Love Invoke-RestMethod
+
 - Love the Windows PowerShell ISE
 
 From Start Menu: "PowerShell ISE"
@@ -267,6 +269,8 @@ However, if you use the period, you can *include* the PS1 module for use, if it 
 - GUIs and PowerShell
 - PSCustomObject creation
 - Using external DLL dependencies (Add-Type, .NET [reflection.assembly])
+- try/catch with PowerShell
+- Microsoft Powershell Gallery (https://www.powershellgallery.com/)
 
 ## Resources
 - Installing PS on macOS: https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6
