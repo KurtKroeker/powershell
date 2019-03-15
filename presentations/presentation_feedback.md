@@ -18,3 +18,9 @@
 * Comment on -WhatIf parameter (run but don't run)
 * Investigate PS and local directory paths
 * Add section for including external PS1 files as dependencies using .\some-dependency.ps1
+* Revisit hash tables...not exactly as I described
+* Add try/catch
+
+# Additional Resources
+- 10 PowerShell commands every developer should know: https://stackify.com/powershell-commands-every-developer-should-know/
+- Everything about hash tables: https://powershellexplained.com/2016-11-06-powershell-hashtable-everything-you-wanted-to-know-about/#using-the-brackets-for-access
