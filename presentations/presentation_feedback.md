@@ -20,6 +20,7 @@
 * Add section for including external PS1 files as dependencies using .\some-dependency.ps1
 * Revisit hash tables...not exactly as I described
 * Add try/catch
+* Latest version is actually 6.1 (March 2019) and is NOT installed by default on all PCs
 
 # Additional Resources
 - 10 PowerShell commands every developer should know: https://stackify.com/powershell-commands-every-developer-should-know/

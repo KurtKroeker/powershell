@@ -1,4 +1,4 @@
-# Why EnergyCAP Developers should love MS PowerShell)
+# Why EnergyCAP Developers should love MS PowerShell
 Author: Kurt Kroeker
 
 Last Updated: 3/11/2019
