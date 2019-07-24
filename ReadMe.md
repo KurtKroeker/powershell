@@ -8,4 +8,10 @@ This repository primarily represents my personal PowerShell library for automati
 
 - *compiled* contains compiled code (C# projects, etc.)
 - *snippets* contains my favorite PowerShell snippets
-- *presentations* contains my presentation artifacts for the PowerShell talk
+- *presentations* contains my presentation artifacts for the PowerShell talkw
+
+## TODO
+- Investigate PowerShell modules and mention in the talk (NuGet, In)
+- Add Get-Credential to PS presentation
+- Add Visual Studio Code PS development to talk
+- Expand Pester examples
