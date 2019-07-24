@@ -284,3 +284,4 @@ However, if you use the period, you can *include* the PS1 module for use, if it 
 - Save Excel as CSV: https://michlstechblog.info/blog/powershell-export-excel-workbook-as-csv-file/
 - Setting ExecutionPolicy: https://www.mssqltips.com/sqlservertip/2702/setting-the-powershell-execution-policy/
 - Version of .NET used by PowerShell: https://stackoverflow.com/questions/3344855/which-net-version-is-my-powershell-script-using
+- Niceties for working in git with PowerShell - posh-git: https://github.com/dahlbyk/posh-git
