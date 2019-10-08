@@ -15,3 +15,4 @@ This repository primarily represents my personal PowerShell library for automati
 - Add Get-Credential to PS presentation
 - Add Visual Studio Code PS development to talk
 - Expand Pester examples
+- Demonstrate ExecutionPolicy levels (src: https://www.hanselman.com/blog/SigningPowerShellScripts.aspx) and discuss Scopes

@@ -24,6 +24,7 @@
 * Add Format-Table
 * Investigate Linq in PowerShell
 * Mention posh-git module
+* Add comment-based feedback (https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help?view=powershell-6)
 
 # Additional Resources
 - 10 PowerShell commands every developer should know: https://stackify.com/powershell-commands-every-developer-should-know/
