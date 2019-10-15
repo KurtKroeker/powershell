@@ -1,14 +1,35 @@
-# Why EnergyCAP Developers should love MS PowerShell
+# Why Developers should love Powershell
 Author: Kurt Kroeker
-
-Last Updated: 3/11/2019
+Last Updated: 10/11/2019
 
 ## Introduction
-Kurt Kroeker, Sr. Software Developer at EnergyCAP, Inc. for 10 years. I've built A/P, interval data, and bill reformatters, EDI scripts, SQL scripts, workflow scripts for EnergyCAP. So you can tell that I mostly work on the back-end side EnergyCAP software, which is now the place where I am.
+* Intro
+    * Welcome to "Why Developers should love Powershell"!
+    * This is my first technical presentation outside EnergyCAP office doors, so please be gentle with me! 
+        * I'm much more comfortable being in front of people when I have a violin, guitar, mandolin, whatever in my hands. 
+* About Me
+    * Kurt Kroeker, Sr. Software Developer at EnergyCAP, Inc. for 11 years
+    * Lifelong State College, PA resident - State High, University Park, part-time ECAP during Junior year
+    * Currently working as part of the back-end team developing RESTful APIs for the core EnergyCAP product and related services
+    * Father of 4: Josephine, Cecilia, Eleanor, George
+    * Spare time(!!!) fiddler and play mandolin, guitar; I occasionally play in a couple of bands located in the State College area
+* About EnergyCAP
+    * EnergyCAP is an enterprise-level utility bill accounting app, which means our software generates customer value from utility-related information such as vendor bills, meter readings, and weather data
+    * The value we provide is in the form of utility bill analysis, splitting utility costs among many different customers (which includes generating our own utility bills), and creating configurable dashboards showing the system metrics our customers care about.
+    * Some of our past or current clients are Penn State University, Sheetz luxury convenience stores, Accenture, Kroger grocery stores, the Smithsonian Institution (TODO: can I do this?)
 
-Much more comfortable being in front of people when I have a violin, guitar, mandolin, whatever in my hands. 
+## Agenda
+* Kurt's PowerShell Background
+* Why should I care about PowerShell?
+* What is PowerShell?
+* Tips working with PowerShell
+* Resources
+* Questions?
 
-"When all you have is a hammer, every problem looks like a nail." PowerShell as my Swiss Army Knife, and you just add your own blades over time.
+## Powershell
+
+"When all you have is a hammer, every problem looks like a nail." 
+* I'd like to encourage you to think of PowerShell as your Swiss Army Knife, but one where you can just add your own blades over time.
 
 Informal poll: Raise hand if you are a...
 * Rank beginner to Powershell
@@ -17,35 +38,51 @@ Informal poll: Raise hand if you are a...
 
 That was my last attempt to get out of this presentation. :)
 
-## Agenda
-* Why should I care about PowerShell?
-* What is PowerShell?
-* Tips working with PowerShell
-* Resources
-* Questions?
-
 ## My PowerShell Background
 
-Back in the day (2012), Miami-Dade County (MDC) needed to put together an automated workflow for data flowing in and out of EnergyCAP. This workflow included supporting 2 environments (Test and Production), importing EDI bills, executing 4 AP interfaces, setting bill flags, calling Installed Client's external task to run audits, and (eventually) calling ECO v3's APIs (V7 didn't exist yet in any form). Logging was required for all of these functions, and they required file manipulation, dealing with JSON data, and even sending emails with summaries of the log. 
+Back in the day (2012), Miami-Dade County (MDC) needed to put together an automated workflow for data flowing in and out of EnergyCAP. This workflow included:
+* Supporting 2 environments (Test and Production)
+* Importing bills from an EDI format
+* Executing 4 custom A/P interfaces and verifying the results
+* Setting bill flags on the new bills
+* Executing one of our legacy apps to audit the bills, later replaced with making REST API calls to a newer version of our software
+* Logging was required for all of these functions, and they required file manipulation, dealing with JSON data, and even sending emails with summaries of the log. 
 
-Chris Houdeshell recommended PowerShell as a solution to me and helped me get the project off and running, and it grew into the monstrosity now in Josh Condo's capable hands. 
+One of our technical leads, Chris Houdeshell, recommended PowerShell as a solution to me and helped me get the project off and running. It was a successful project, and a number of our clients have similar workflow automation scripts for their environments.
 
-Over the years, I've found more and more uses for PowerShell when automating repetitive tasks in my development work. Some examples are adding a library of time-saving functions to help me get around my repositories and EnergyCAP resources, checking for obvious mistakes in report release ZIPs, creating "mini" report ZIPs and installing them, interacting with external APIs (Localise), and even looking up obscure passwords.
+By the way, Chris is here at TechBash and presented "Recovery by Design: A Postmortem Adventure" yesterday. Hopefully you all enjoyed his presentation!
 
-Don't remember how to do it; figure it out and then write a PowerShell script for it!
+<!-- * About This Talk
+    * I mentioned EnergyCAP and some of our clients. It was through the requirements of these clients that I was first introduced to PowerShell
+    * Some of our clients had complicated automated workflows. These workflows regularly involved:
+        * File system manipulation
+        * Business logic for making branching decisions
+        * Error handling
+        * Executing other apps with changing parameters and verifying the results they produced
+        * Web requests to EnergyCAP APIs
+        * Working with CSV, JSON, and other file formats
+        * Rapid iteration to adjust to emerging requirements
+        * ...all of which Powershell suits very well. Powershell was (and is) the technology we use for client workflows.
+    * When I moved to working on the main EnergyCAP product, I encountered PowerShell again and again in:
+        * Our build scripts for the app
+        * Hooks into Powershell from some platforms we use such as OctopusDeploy, JAMS, Visual
+        * Powershell terminals in our development tools (Visual Studio, VS Code)
+        * Frequent references to  -->
 
-We mentioned a couple weeks ago that we wanted to reduce dependency on specialists for things we depend upon. Becoming more comfortable with PowerShell is a good way to move this initiative forward.
+Over the years, I've found more and more uses for PowerShell when automating repetitive tasks in my development work. Some examples are adding a library of time-saving functions to help me get around my repositories and EnergyCAP resources, checking for frequently-occurring manual mistakes in report release ZIPs, interacting with external APIs, web scraping, and a variety of other uses.
+
+It's become a tenet of mine: Don't just remember how to do it; figure it out and then write a PowerShell script to do it!
 
 ## Why should I care about PowerShell?
-- It is POWERFUL
+1) It is POWERFUL
     - Scripting, especially when it has hooks into as many things as PowerShell does, helps you do a lot of time-consuming stuff very quickly and accurately
     - It's GREAT for chopping data quickly, especially XML, CSV, and JSON
     - Your favorite .NET APIs are always available to you
-    - It's fast - you can type and tab faster than you can point and click
-- It is EVERYWHERE
-    - It's in all versions of Windows since XP    
+    - It's fast - you can type and tab faster than you can point and click, and available PowerShell IDEs are lightweight and well-featured. The rinse/repeat cycle is very fast.
+2) It is EVERYWHERE
+    - It's in all versions of Windows since XP
     - It's in Azure
-        - Deploy ARM 
+        - Deploy ARM
         - Nice suite of built-in PowerShell commands for working with Azure
     - Since August 2016 with PowerShell Core, it's cross-platform and open source
     - It's in EnergyCAP code:
@@ -53,7 +90,7 @@ We mentioned a couple weeks ago that we wanted to reduce dependency on specialis
         - ECAP codebase: `C:\ecap\energycap\contrib\Loco`, `build.ps1`, etc.
         - Reports repository
     - It is embedded in Visual Studio Code, Visual Studio
-- It is FAMILIAR
+2) It is FAMILIAR
     - Thanks to aliases, you already have a handle on PS syntax that you bring from other systems
     - C# developers and people familiar with COM objects will enjoy having familiar APIs at their fingertips
 
@@ -62,16 +99,13 @@ We mentioned a couple weeks ago that we wanted to reduce dependency on specialis
 - Like cmd.exe on steroids; includes everything I can think of from cmd.exe; access to system environment variables, directory navigation, execution of scripts, file I/O, interactions with RESTful APIs, PC administration, and much more.
 
 ### Brief History Lesson
+Every version of Windows has always had its CLI (command line interpreter). Back MS-DOS days, everything was done via the CLI! (my first code was "cd "). However, cmd.exe and batch files had limited functionality.
 
-Every version of Windows has always had its CLI (command line interpreter). Back MS-DOS days, everything was done via the CLI! (my first code was "cd "). However, cmd.exe and batch files had limited functionality and couldn't automate GUIs very well.
+Microsoft introduced Windows Script Host and VBScript in Windows 98. Once nice feature added here was the ability to script access to COM objects. EnergyCAP's legacy app took advantage of this and had a fairly advanced scripting engine. However, poor documentation and security concerns gave VBScript a bad reputation.
 
-Microsoft introduced Windows Script Host and VBScript in Windows 98. Once nice feature added here was the ability to script access to COM objects. EnergyCAP installed client took advantage of this via Virtual Account scripts, Batch name formulas, and EDI scripts. However, poor documentation and security concerns gave it a bad reputation.
+By 2002, MS was developing a new CLI called Monad, focused on automating core Windows administrative tasks. Monad was renamed to be PowerShell in April 2006, and then v1 was released at the same time.
 
-By 2002, MS was developing a new CLI called Monad, focused on automating core administrative tasks. Monad was renamed to be PowerShell in April 2006, and then v1 was released at the same time.
-
-That means PowerShell is available as far back as Windows XP. Early versions didn't include cmdlets for Azure and web technologies because they were maturing; I've seen this feature set grow over time. 
-
-13-year-old technology! Not staying stagnant...I learned quite a few things about PowerShell since starting to prepare this presentation! Two of the most interesting changes: 
+That means PowerShell is available as far back as Windows XP. Early versions didn't include cmdlets for Azure and web technologies because they were still maturing; I've seen this feature set grow over time. 13-year-old technology! Not staying stagnant...I learned quite a few things about PowerShell since starting to prepare this presentation! Two of the most interesting changes: 
 - Unit Testing framework that shipped with Windows 10 (2015)
 - PowerShell Core for all OSs (2016)
 
@@ -219,7 +253,25 @@ From PowerShell: `ise` or `powershell_ise`
 
 ### Gotchas
 
-Working with strings
+#### ExecutionLevel
+I mentioned security concerns earlier with VBScript. PowerShell has some very nice security features to protect users from malicious script execution, one of them being the ExecutionPolicy.
+
+`Get-ExecutionPolicy`
+
+There are a number levels of ExecutionPolicy. From most stringent to least stringent:
+* Restricted - terminal scripting only; can't execute script files
+* AllSigned - all script files can be executed only if they're signed
+* RemoteSigned - remote script files can be executed only if they're signed
+* Default - sets the default execution policy
+* Bypass - nothing is blocked and there are no warnings or prompts
+
+If you find scripts online that you want to try, you may find yourself having to negotiate the ExecutionPolicy, which may require elevated access to change. 
+I recently hit this with a script I needed to resize a batch of images. I couldn't install the module; but I reviewed the script within the module and easily adapted it.
+
+Resource: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6
+Resource: https://gallery.technet.microsoft.com/scriptcenter/Resize-Image-A-PowerShell-3d26ef68
+
+#### Working with strings
 - Watch your delimiters!
 
 PowerShell allows both single and double quotes to be used for delimiters. However, only double quotes honor string interpolation. Compare the following statements.
@@ -230,28 +282,37 @@ PowerShell allows both single and double quotes to be used for delimiters. Howev
 
 While you can usually choose single or double quotes when working with short strings, when you have to work with stringified JSON, you might have both single and double quotes in the data. Here-Strings are your friend:
 
-`$json = @"
+```
+$json = @"
 {"placeCode":"KURTS_APOSTROPHIED_BUILDING","placeInfo":"Kurt's Apostrophie'd \"Building\"","parentPlaceId":1,"placeTypeId":2,"primaryUseId":null,"weatherStationCode":"UNV","buildDate":null,"address":{"addressTypeId":"1","country":"US","line1":"","line2":"","city":"State College","state":"PA","postalCode":"16803","latitude":"","longitude":"","weatherStationCode":"UNV"}}
 @"
 
-`ConvertFrom-Json $json`
+ConvertFrom-Json $json
 
-- Old code on the internet
+$json
+```
 
+Additionally, if you have a complex object to use with string interpolation, you need to do a little more. Consider this more complex example:
+
+`Get-ChildItem | ForEach-Object { "The length of this file is $_.length" }`
+`Get-ChildItem | ForEach-Object { "The length of this file is $($_.length)" }`
+
+In this example, you need to surround the property reference with another $(). Then the interpolation will work correctly.
+
+#### Old code on the internet
 Since PowerShell has evolved quite a bit over time, make sure you're always checking the timestamps on the articles and code samples you read. Something that used to be really hard (e.g. JSON manipulation before PowerShell 3.0 and `ConvertFrom-Json`) might have become really easy.
 
-- Is it an array?
-
-Sometimes you may find that variables which you expected to be an array. For example, the much-used `Get-ChildItem` returns an array of files OR a single file (if there was only 1). Fore example:
+#### Is it an array?
+Sometimes you may find that variables which you expected to be an array are not. For example, the much-used `Get-ChildItem` returns an array of files OR a single file (if there was only 1). For example:
 
 `(gci *.ps1) -is [system.array]`
 `(gci *.dll) -is [system.array]`
 
+Scenarios like this expose themselves where you expect a loop to execute multiple times but they error!
 If you find that you're in a scenario like this, you can always check for array-ness to make sure you code produces the expected results.
 
-- Calling assemblies with arguments
-
-Getting the syntax right was super frustrating when I wanted to execute an EXE with some arguments. However, I think this has gotten better with more recent versions of PowerShell. Here's an example of callings some assemblies with arguments from PowerShell:
+#### Calling assemblies with arguments
+Getting the syntax right was super frustrating when I wanted to execute an EXE with some arguments. However, I think this has gotten better with more recent versions of PowerShell. Here's an example of calling some assemblies with arguments from PowerShell:
 
 `dotnet .\ThermaCAPtureStats.dll -search "vance"`
 
