@@ -325,6 +325,7 @@ However, if you use the period, you can *include* the PS1 module for use, if it 
 - PSCustomObject creation
 - Using external DLL dependencies (Add-Type, .NET [reflection.assembly])
 - try/catch with PowerShell
+- Splatting arguments into functions/commandlets >> USE @ instead of $ for splatting...
 
 ## Resources
 - Installing PS on macOS: https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6
