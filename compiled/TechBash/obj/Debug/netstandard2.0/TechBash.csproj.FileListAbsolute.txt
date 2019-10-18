@@ -1,0 +1,8 @@
+C:\ps\compiled\TechBash\bin\Debug\netstandard2.0\TechBash.deps.json
+C:\ps\compiled\TechBash\bin\Debug\netstandard2.0\TechBash.dll
+C:\ps\compiled\TechBash\bin\Debug\netstandard2.0\TechBash.pdb
+C:\ps\compiled\TechBash\obj\Debug\netstandard2.0\TechBash.csprojAssemblyReference.cache
+C:\ps\compiled\TechBash\obj\Debug\netstandard2.0\TechBash.AssemblyInfoInputs.cache
+C:\ps\compiled\TechBash\obj\Debug\netstandard2.0\TechBash.AssemblyInfo.cs
+C:\ps\compiled\TechBash\obj\Debug\netstandard2.0\TechBash.dll
+C:\ps\compiled\TechBash\obj\Debug\netstandard2.0\TechBash.pdb

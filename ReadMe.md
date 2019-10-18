@@ -16,3 +16,6 @@ This repository primarily represents my personal PowerShell library for automati
 - Add Visual Studio Code PS development to talk
 - Expand Pester examples
 - Demonstrate ExecutionPolicy levels (src: https://www.hanselman.com/blog/SigningPowerShellScripts.aspx) and discuss Scopes
+- Include some "favorite PowerShell modules" links
+    - JiraPS (https://www.powershellgallery.com/packages/JiraPS/2.12.2) in PowerShell Gallery
+    - ResizeImage (https://gallery.technet.microsoft.com/scriptcenter/Resize-Image-A-PowerShell-3d26ef68) in TechNet Gallery
