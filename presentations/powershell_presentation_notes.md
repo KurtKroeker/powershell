@@ -184,11 +184,19 @@ function GetRandomNumber()
 
 - operators
 
-    -eq, -ne, -gt, -like, -and, -or
+    -eq, -ne, -gt, -lt, -like, -and, -or, -not
 
     `Where-Object, if()`
 
     Can use -like with wildcard * character
+
+    -match -notmatch -replace -split
+
+    Can use regex operators
+
+    -whatif
+
+    You can see what WOULD happen without actually performing the action
 
 ## Tips working with PowerShell
 
@@ -316,16 +324,28 @@ When you're navigating directory structures in PS, you can execute PS1 files dir
 
 However, if you use the period, you can *include* the PS1 module for use, if it contains functions you want to use: `. .\myFileName.ps1` will both *execute* the script AND register the functions for use within the PowerShell session.
 
-## Subjects Not Covered
+## Subjects Not Demoed
 - Execution policies
     - I (we?) have RemoteSigned, meaning any code downloaded from the internet will not be executed by accident
 - Azure resource interactions
 - PC user and administrative management
 - GUIs and PowerShell
+    - Building using Windows Forms...I prefer named parameters, Read-Host, Get-Credential
+    - I saw a desktop automation module
+    - Selenium has a PowerShell module; it's nice :)
 - PSCustomObject creation
 - Using external DLL dependencies (Add-Type, .NET [reflection.assembly])
 - try/catch with PowerShell
-- Splatting arguments into functions/commandlets >> USE @ instead of $ for splatting...
+- Splatting arguments into functions/commandlets
+    - Use @ instead of $ for splatting...
+
+## Q & A
+- Why should I use PowerShell Core vs. regular?
+    - PSCore feature set is smaller b/c .NET Core is newer
+    - Run PS-based automation in other OSs
+    - .NET Core generally faster than .NET Framework
+    - PowerShell core is open source; see the guts
+    - NOTE: can't use ISE in PSCore...use VSCode insteads
 
 ## Resources
 - Installing PS on macOS: https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6
