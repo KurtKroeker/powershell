@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "ThermaCAPtureStats": {
-      "commandName": "Project",
-      "commandLineArgs": "-search vance"
-    }
-  }
-}
