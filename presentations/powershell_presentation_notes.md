@@ -8,7 +8,7 @@ Intro
 * This is my first technical presentation outside EnergyCAP office doors, so please be gentle with me! 
     * I'm much more comfortable being in front of people when I have a violin, guitar, mandolin, whatever in my hands. 
 
-# About Kurt
+## About Kurt
 
 * Kurt Kroeker, Sr. Software Developer at EnergyCAP, Inc. for 11 years
     * Currently working as part of the back-end team developing RESTful APIs for the core EnergyCAP product and related services
@@ -16,22 +16,23 @@ Intro
 * Father of 4: Josephine, Cecilia, Eleanor, George
 * Spare time(!!!) fiddler and play mandolin, guitar; I occasionally play in a couple of bands located in the State College area
 
-# About EnergyCAP
+## About EnergyCAP
 
 * EnergyCAP is an enterprise-level utility bill accounting app, which means our software generates customer value from utility-related information such as vendor bills, meter readings, and weather data
 * The value we provide is in the form of utility bill analysis, splitting utility costs among many different customers (which includes generating our own utility bills), and creating configurable dashboards showing the system metrics our customers care about.
-* Some of our past or current clients are Penn State University, Sheetz luxury convenience stores, Accenture, Kroger grocery stores, the Smithsonian Institution (TODO: can I do this?)
+* Some of our clients are City of Philadelpia, Penn State University, University of Nebraska Lincoln, Accenture, the Smithsonian Institution
 
 ## About This Talk/Agenda
 
-Talking
-* Kurt's PowerShell Background
-* Why should I care about PowerShell?
-Demos
-* Introduction to PowerShell
-* Tips working with PowerShell
-Resources
-Q & A
+* **Talking**
+    * Kurt's PowerShell Background
+    * Why should I care about PowerShell?
+* **Demos**
+    * Introduction to PowerShell
+    * Tips working with PowerShell
+    * PowerShell Gotchas
+* **Resources**
+* **Q & A**
 
 ## Powershell
 
