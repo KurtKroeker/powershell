@@ -196,11 +196,15 @@ function GetRandomNumber()
 
     -whatif
 
-    You can see what WOULD happen without actually performing the action
+    For some actions which are potentially destructive, you can see what WOULD happen without actually performing the action
 
 ## Tips working with PowerShell
 
-### Things to Love
+- Get-Help, Get-Command, Get-Member
+
+One of the things I like best about learning PowerShell and extending my knowledge of it is how discoverable everything is. There are three powerful commandlets built into PowerShell which make use of PowerShell's comment-based help system:
+
+Get-Help will format documentation attached to the commandlet or function, and it will 
 
 - Love the tab key
 
@@ -300,6 +304,14 @@ Additionally, if you have a complex object to use with string interpolation, you
 `Get-ChildItem | ForEach-Object { "The length of this file is $($_.length)" }`
 
 In this example, you need to surround the property reference with another $(). Then the interpolation will work correctly.
+
+#### Error handling with $Error
+Array of "ErrorRecord" objects representing exceptions encountered in this PS session in DESCENDING order. The 0th ErrorRecord is the most recent.
+
+This may be helpful for you to know about when tracking and handling exceptions in your script code and examine the exceptions more deeply. The actual .NET exception object is there in the properties when you drill down.
+
+#### Relative path handling
+One of the most awkward PS-isms I've had to deal with, which is an issue in all versions that I've used, is handling (or lack thereof) of relative paths to files and directories.
 
 #### Old code on the internet
 Since PowerShell has evolved quite a bit over time, make sure you're always checking the timestamps on the articles and code samples you read. Something that used to be really hard (e.g. JSON manipulation before PowerShell 3.0 and `ConvertFrom-Json`) might have become really easy.
