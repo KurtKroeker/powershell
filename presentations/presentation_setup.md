@@ -1,8 +1,8 @@
 # Presentation Setup
 
 Hardware Needed
-- laptop
-- spare laptop
+- laptop (Surface)
+- spare laptop (??)
 - presentation screen
 
 Software

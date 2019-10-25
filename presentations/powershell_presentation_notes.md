@@ -146,11 +146,7 @@ PowerShell variables are extremely flexible. They are *not* type safe unless you
 
 Here's how you initialize typed variables: [string], [xml]
 
-`
-<response error="">
-    <station name="UNVX" city="University Park" state="PA" country="US" latitude="40.800000" longitude="-77.850000" elevation="1158"/>
-</response>
-`
+**DEMO: XML contained in cd_catalog.xml**
 
 What are my available variables? Use `Get-Variable`
 
@@ -168,19 +164,13 @@ You can pass parameters to PS1 files, you can even make them mandatory
 
 While you can contain PowerShell code at the file level, you can also declare multiple code functions within a single PS script file. These can be available within a single PS script execution or, when loaded into session memory, they can be used over and over again.
 
-`
-function GetRandomNumber()
-{
-    $rand = Get-Random -Maximum 100 -Minimum 0
-    return $rand
-}
-`
-
 - pipelines
 
     "Pipelines act like a series of connected segments of pipe. Items moving along the pipeline pass through each segment." 
     
-    (source: https://docs.microsoft.com/en-us/powershell/scripting/learn/understanding-the-powershell-pipeline?view=powershell-5.1)
+    **DEMO: demo_pipelines.ps1**
+
+Resource: https://docs.microsoft.com/en-us/powershell/scripting/learn/understanding-the-powershell-pipeline?view=powershell-5.1
 
 - operators
 
@@ -201,6 +191,14 @@ function GetRandomNumber()
 ## Tips working with PowerShell
 
 ### Things to Love
+
+- Get-Help, -Command, -Member
+
+I mentioned the high discoverability of PowerShell functionality earlier. I want to quickly review them a bit more, and dig deeper into why why these work so well and how you can leverage the power of comment-based help.
+
+Get-Help is good for your code, not just pre-packaged code; good practice to document using comment-based help. Keep your PS documentation up to date along with your source code.
+
+**DEMO: demo_commentBasedHelp.ps1**
 
 - Love the tab key
 
@@ -226,18 +224,26 @@ If you want a concise but powerful dictionary-like object to work with, you'll l
 
 `$myHashTable = @{ Name = "Kurt Kroeker"; Age = 31; Occupation = "Software Guy" }`
 
-They even give you autocomplete for properties!
+They even give you autocomplete for properties, including properties with spaces in the names!
 
 - Love working with JSON and CSV
 
-PowerShell comes with niceties for working with data in CSV and JSON format:
+PowerShell comes with niceties for working with data in XML, CSV and JSON format:
 
 `ConvertFrom-CSV` and `ConvertTo-Csv`
 `ConvertFrom-Json` and `ConvertTo-Json`
 
+**DEMO: cd_catalog.xml**
+**DEMO: places.json**
+**DEMO: SalesJan2009.csv**
+
+Format-Table may be useful to you as well when you're trying to view data.
+
 - Love Invoke-RestMethod
 
-- Love the Windows PowerShell ISE
+**DEMO: demo_apiCalls.ps1**
+
+- Love the Windows PowerShell ISE and VS Code
 
 From Start Menu: "PowerShell ISE"
 
@@ -247,13 +253,14 @@ From PowerShell: `ise` or `powershell_ise`
 
 - Love .NET!
 
-`Add-Type -Path .\EnergyCap.Data.dll`
-
-`$context = New-Object EnergyCap.Data.Entity.EcDbContext "Data Source=devsqlwin01\sql2017;User ID=esuser;Password=e2isnotis;Initial Catalog=vnext_abbvie", 2, 1024`
-
-`$context.SystemUsers | Where-Object { $_.systemUserID -eq 2 }`
+I just need to keep pointing out that everything you're seeing in this session is in the context of the .NET or .NET core framework. The same structures, APIs, libraries are available to you throughout, so it will feel very familiar to .NET developers.
 
 ### Gotchas
+
+#### . vs. .\
+When you're navigating directory structures in PS, you can execute PS1 files directly by using the `.\myFileName.ps1` syntax. The command as expressed here will simply RUN the script.
+
+However, if you use the period, you can *include* the PS1 module for use, if it contains functions you want to use: `. .\myFileName.ps1` will both *execute* the script AND register the functions for use within the PowerShell session. This is called "dot sourcing" the script.
 
 #### ExecutionPolicy
 PowerShell has some very nice security features to protect users from malicious script execution, one of them being the ExecutionPolicy.
@@ -310,42 +317,62 @@ Sometimes you may find that variables which you expected to be an array are not.
 `(gci *.ps1) -is [system.array]`
 `(gci *.dll) -is [system.array]`
 
-Scenarios like this expose themselves where you expect a loop to execute multiple times but they error!
+Scenarios like this expose themselves where you expect a loop to execute multiple times but they error! `Get-Service` also subject to this effect.
+
+Resource: https://devblogs.microsoft.com/powershell/same-command-different-return-types/
+
+**DEMO: "length" property means two different things for results from Get-ChildItem**
+
 If you find that you're in a scenario like this, you can always check for array-ness to make sure you code produces the expected results.
 
 #### Calling assemblies with arguments
-Getting the syntax right was super frustrating when I wanted to execute an EXE with some arguments. However, I think this has gotten better with more recent versions of PowerShell. Here's an example of calling some assemblies with arguments from PowerShell:
+Getting the syntax right was super frustrating when I wanted to execute an EXE with some arguments. It's easy to get confused by PowerShell's behavior when it comes to the syntax for passing arguments into EXEs. Here's an example of calling some assemblies with arguments from PowerShell:
 
-`dotnet .\ThermaCAPtureStats.dll -search "vance"`
+**DEMO: demo_consoleArgs.ps1**
 
-- . vs. .\
+#### PowerShell and TLS
+PowerShell is configured to make all web requests using TLS 1.0, so if you're making web requests against a web server with TLS 1.1+ enabled, you'll quickly discover that Invoke-RestMethod and Invoke-WebRequest calls will fail, perhaps with an error message like this:
 
-When you're navigating directory structures in PS, you can execute PS1 files directly by using the `.\myFileName.ps1` syntax. The command as expressed here will simply RUN the script.
+```The request was aborted: Could not create SSL/TLS secure channel.```
 
-However, if you use the period, you can *include* the PS1 module for use, if it contains functions you want to use: `. .\myFileName.ps1` will both *execute* the script AND register the functions for use within the PowerShell session.
+You can configure PowerShell to communicate with TLS 1.1 and 1.2 by modifying the ServicePointManager's SecurityProtocol setting. Try running this snippet in PowerShell and retry your request:
+
+```[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12;```
+
+Please note that this will ONLY affect your current PowerShell session. To make it stick, add this line to your PowerShell Profile.
 
 ## Subjects Not Demoed
-- Execution policies
-    - I (we?) have RemoteSigned, meaning any code downloaded from the internet will not be executed by accident
+- Splatting arguments into functions/commandlets
+    - Use @ instead of $ for splatting...
 - Azure resource interactions
 - PC user and administrative management
 - GUIs and PowerShell
     - Building using Windows Forms...I prefer named parameters, Read-Host, Get-Credential
-    - I saw a desktop automation module
+    - I saw a desktop automation module out there
     - Selenium has a PowerShell module; it's nice :)
 - PSCustomObject creation
-- Using external DLL dependencies (Add-Type, .NET [reflection.assembly])
-- try/catch with PowerShell
-- Splatting arguments into functions/commandlets
-    - Use @ instead of $ for splatting...
+- Add-Type to use DLLs, even create your own!
+- try/catch with PowerShell; error handling with $Error array of "ErrorRecord" types with the exception type and other details within, if you drill down.
 
 ## Q & A
-- Why should I use PowerShell Core vs. regular?
+
+- Q: Why should I use PowerShell Core vs. regular?
     - PSCore feature set is smaller b/c .NET Core is newer
     - Run PS-based automation in other OSs
     - .NET Core generally faster than .NET Framework
     - PowerShell core is open source; see the guts
     - NOTE: can't use ISE in PSCore...use VSCode insteads
+
+- Q: Why should I use Visual Studio Code vs the ISE?
+    - VS Code
+        - Is much nicer for managing projects/workspaces
+        - More customizable than the ISE (e.g. default terminals for PS or PSCore)
+        - Debugging experience was prettier
+        - However, integrated PS terminal was not as nice; quirks of text input, autocomplete not as nice; no colors
+    - ISE
+        - Already installed everywhere
+        - Decent debugging experience
+        - ISE is not included as part of PowerShell Core; you'll have to use VS Code
 
 ## Resources
 - Installing PS on macOS: https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6

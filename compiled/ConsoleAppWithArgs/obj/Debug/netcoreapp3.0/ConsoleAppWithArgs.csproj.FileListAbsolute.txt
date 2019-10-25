@@ -1,0 +1,11 @@
+c:\ps\compiled\ConsoleAppWithArgs\bin\Debug\netcoreapp3.0\ConsoleAppWithArgs.exe
+C:\ps\compiled\ConsoleAppWithArgs\bin\Debug\netcoreapp3.0\ConsoleAppWithArgs.deps.json
+C:\ps\compiled\ConsoleAppWithArgs\bin\Debug\netcoreapp3.0\ConsoleAppWithArgs.runtimeconfig.json
+C:\ps\compiled\ConsoleAppWithArgs\bin\Debug\netcoreapp3.0\ConsoleAppWithArgs.runtimeconfig.dev.json
+c:\ps\compiled\ConsoleAppWithArgs\bin\Debug\netcoreapp3.0\ConsoleAppWithArgs.dll
+c:\ps\compiled\ConsoleAppWithArgs\bin\Debug\netcoreapp3.0\ConsoleAppWithArgs.pdb
+c:\ps\compiled\ConsoleAppWithArgs\obj\Debug\netcoreapp3.0\ConsoleAppWithArgs.csprojAssemblyReference.cache
+c:\ps\compiled\ConsoleAppWithArgs\obj\Debug\netcoreapp3.0\ConsoleAppWithArgs.AssemblyInfoInputs.cache
+c:\ps\compiled\ConsoleAppWithArgs\obj\Debug\netcoreapp3.0\ConsoleAppWithArgs.AssemblyInfo.cs
+c:\ps\compiled\ConsoleAppWithArgs\obj\Debug\netcoreapp3.0\ConsoleAppWithArgs.dll
+c:\ps\compiled\ConsoleAppWithArgs\obj\Debug\netcoreapp3.0\ConsoleAppWithArgs.pdb
