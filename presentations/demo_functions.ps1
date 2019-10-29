@@ -1,8 +1,9 @@
-# TODO: add parameters
+# TODO: add typed parameters
 # TODO: show passing arguments
-function GetRandomNumber()
+# TODO: validate parameters
+function GetRandomNumber
 {
-    $rand = Get-Random -Maximum 1000 -Minimum 1
+    $rand = Get-Random -Minimum 1 -Maximum 1000
     return $rand
 }
 GetRandomNumber

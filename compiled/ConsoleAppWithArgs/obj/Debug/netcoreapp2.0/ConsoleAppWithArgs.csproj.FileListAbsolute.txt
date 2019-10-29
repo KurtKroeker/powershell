@@ -1,0 +1,10 @@
+C:\powershell\compiled\ConsoleAppWithArgs\bin\Debug\netcoreapp2.0\ConsoleAppWithArgs.deps.json
+C:\powershell\compiled\ConsoleAppWithArgs\bin\Debug\netcoreapp2.0\ConsoleAppWithArgs.runtimeconfig.json
+C:\powershell\compiled\ConsoleAppWithArgs\bin\Debug\netcoreapp2.0\ConsoleAppWithArgs.runtimeconfig.dev.json
+C:\powershell\compiled\ConsoleAppWithArgs\bin\Debug\netcoreapp2.0\ConsoleAppWithArgs.dll
+C:\powershell\compiled\ConsoleAppWithArgs\bin\Debug\netcoreapp2.0\ConsoleAppWithArgs.pdb
+C:\powershell\compiled\ConsoleAppWithArgs\obj\Debug\netcoreapp2.0\ConsoleAppWithArgs.csproj.CoreCompileInputs.cache
+C:\powershell\compiled\ConsoleAppWithArgs\obj\Debug\netcoreapp2.0\ConsoleAppWithArgs.AssemblyInfoInputs.cache
+C:\powershell\compiled\ConsoleAppWithArgs\obj\Debug\netcoreapp2.0\ConsoleAppWithArgs.AssemblyInfo.cs
+C:\powershell\compiled\ConsoleAppWithArgs\obj\Debug\netcoreapp2.0\ConsoleAppWithArgs.dll
+C:\powershell\compiled\ConsoleAppWithArgs\obj\Debug\netcoreapp2.0\ConsoleAppWithArgs.pdb
