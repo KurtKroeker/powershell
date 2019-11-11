@@ -1,14 +1,9 @@
 # TODO: add typed parameters in line/multiple rows
 # TODO: show passing arguments
 # TODO: validate parameters
-function GetRandomNumber(
-    [Parameter(Mandatory=$true)]
-    $MinValue,
-    [Parameter(Mandatory=$true)]
-    $MaxValue
-)
+function Get-RandomNumberCustom
 {
-    $rand = Get-Random -Minimum $MinValue -Maximum $MaxValue
+    $rand = Get-Random -Minimum 1 -Maximum 10
     return $rand
 }
-GetRandomNumber
+Get-RandomNumberCustom

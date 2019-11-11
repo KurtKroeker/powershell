@@ -1,5 +1,8 @@
 # lite error handling
 
+#$ErrorActionPreference = "Continue"
+#Stop-Process -ErrorAction Continue
+
 function Do-Something
 {
     throw "Something bad happened!"
@@ -13,11 +16,11 @@ function Do-Something
 # TODO: typed exceptions (System.IndexOutOfRangeException); multiple at once
 # TODO: $error var
 
-try {
+# try {
      Do-Something
      "We did something"
-}
-catch {
-    #$_
-    Write-Host $_.Exception.Message -ForegroundColor Cyan
-}
+# }
+# catch {
+#     #$_
+#     Write-Host $_.Exception.Message -ForegroundColor Cyan
+# }

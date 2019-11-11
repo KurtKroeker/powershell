@@ -8,10 +8,3 @@
 #$placesJson = Get-Content .\places.json
 #$groupedPlaces = $placesJson | ConvertFrom-Json | ForEach-Object {$_} | Select-Object -ExpandProperty Address | Group-Object -Property City, State, PostalCode
 #$groupedPlaces | Select-Object -Property Name, Count | Sort-Object -Property Count -Descending
-
-# Example 3: Demos with TODO items
-"All PS files:"
-Get-ChildItem *.ps1
-""
-"PS Files with TODO items:"
-Get-ChildItem *.ps1 | Where-Object { (Get-Content $_) -match "TODO" }
