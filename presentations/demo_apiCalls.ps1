@@ -10,13 +10,13 @@ $baseUrl = "https://reqres.in"
 
 # Example 1: GET with Invoke-WebRequest
 # $result = Invoke-WebRequest -Method Get -Uri "$baseUrl/api/users?page=2" -Headers $headers
-# #$result
-# #$result.GetType()
+# $result
+# $result.GetType().FullName
 # $result.Content | ConvertFrom-Json | Select-Object -ExpandProperty data | ForEach-Object { $_.email }
 
 # Example 2: GET with Invoke-RestMethod
 # $result = Invoke-RestMethod -Method Get -Uri "$baseUrl/api/users?page=2" -Headers $headers
-# $result.GetType()
+# $result.GetType().FullName
 # $result.data[0]
 
 # Example 3: POST with Invoke-RestMethod
