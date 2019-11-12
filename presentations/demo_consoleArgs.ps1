@@ -16,6 +16,7 @@ $expression = ".\ConsoleAppWithArgs.exe $arg1 $arg2"
 
 # Write command as a PowerShell expression
 #Invoke-Expression -Command $expression
+#Invoke-Expression -Command ".\ConsoleAppWithArgs.exe '$arg1' '$arg2'"
 
 # Use the call operator, again as a PowerShell expression
 #& ".\ConsoleAppWithArgs.exe" $arg1 $arg2
