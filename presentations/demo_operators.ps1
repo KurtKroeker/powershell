@@ -4,13 +4,13 @@ Set-location C:\powershell\presentations
 
 "There are $($cds.catalog.cd.Count) CDs in my catalog"
 
-# [int]$matches = 0
+[int]$matches = 0
 
-# # TODO: output any cds from the 80s
-# # TODO: find bob dylan cds
+# TODO: output any cds from the 80s
+# TODO: find bob dylan cds
 
 # foreach($cd in $cds.catalog.cd){
-# 	if($cd.year -ge 1980 -and $cd.year -le 1989 -and $cd.ARTIST -like "*dylan*"){
+# 	if($cd.year -ge 1980 -and $cd.year -le 1989 -and $cd.ARTIST -like "*dylan"){
 # 		$cd
 # 		$matches++
 # 	}
@@ -18,8 +18,7 @@ Set-location C:\powershell\presentations
 
 # "$matches matches for the conditions"
 
-# TODO: show match/notmatch
+# TODO: mention match/notmatch
 # TODO: whatif for destructive actions
 
-# TODO :fix me
-#$cds.CATALOG.CD | Where-Object { $_.artist -match "dylan" } | Select-Object -Property title
+# $cds.CATALOG.CD | Where-Object { $_.artist -like "*dylan" } | Select-Object -Property title

@@ -53,6 +53,6 @@ function Add-Extension
     $name
 }
 
-Get-Help Add-Extension
+Get-Help Add-Extension -Full
 
 # source: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_comment_based_help?view=powershell-6
