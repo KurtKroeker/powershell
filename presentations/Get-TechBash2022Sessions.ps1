@@ -9,5 +9,4 @@ $sessions.div.div[0].ul.li
             description=$session.p.InnerText; 
             room=($session.div|?{$_.class -eq 'sz-session__room'}|select innerText,'data-roomid');
             time=($session.div|?{$_.class -eq 'sz-session__time'}).innerText }
-    }|select sessionId,title,speaker,room
-    |Out-GridView
+    }|select sessionId,title,speaker,room|ConvertTo-Json|out-file .\sessions.json
