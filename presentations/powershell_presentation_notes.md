@@ -3,21 +3,14 @@
 Author: Kurt Kroeker
 Last Updated: 10/25/2022
 
+## 1. Title Slide
+
 Intro
 * Welcome to my talk, "Why Developers should love Powershell"!
-* This is my second time giving this talk, the last time was in TechBash 2019, pre-COVID!
+* This is my second time giving this talk, the last time was at TechBash 2019, pre-COVID!
 * I'm very enthusiastic about PowerShell, it's one of the most-used tools in my digital toolbox!
 
-## About Kurt
-
-* Kurt Kroeker, Sr. Integration Software Developer at EnergyCAP, LLC for 14 years
-    * Currently working as part of the integrations team developing services that integrate with our flagship software, EnergyCAP.
-* Lifelong State College, PA resident - Penn State University grad ("WE ARE!")
-* Father of 3 girls and a boy: Josephine, Cecilia, Eleanor, George
-* In my free time, I enjoy playing music with my friends. I play fiddle, mandolin, and guitar, I occasionally play out in a couple of bands located in the State College area
-
-## About This Talk/Agenda
-
+### About This Talk/Agenda
 * **Talking**
     * Why should I care about PowerShell?
 * **Demos**
@@ -27,28 +20,25 @@ Intro
 * **Resources**
 * **Q & A**
 
-## PowerShell
+## 2. About Kurt
 
-"When all you have is a hammer, every problem looks like a nail." 
-* I'd like to encourage you to think of PowerShell as your Swiss Army Knife, but one where you can just add your own blades over time
-* This is true of all scripting languages, but PowerShell brings a lot of great stuff along with it
+* Kurt Kroeker, Sr. Integration Software Developer at EnergyCAP, LLC for 14 years
+    * Currently working as part of the integrations team developing services that integrate with our flagship software, EnergyCAP.
+* Lifelong State College, PA resident - Penn State University grad ("WE ARE!")
+* Father of 3 girls and a boy: Josephine, Cecilia, Eleanor, George
+* In my free time, I enjoy playing music with people. I play fiddle, mandolin, and guitar, I occasionally play out in a couple of bands located in the State College area.
 
-Informal poll: Raise hand if you are a...
-* Rank beginner to Powershell
-* Pretty decent with it
-* You're a PowerShell ninja and want to come up and do this talk for me
+## 3. PowerShell and Me
 
-## My PowerShell Background
+My introduction to PowerShell began with a problem: need to glue together various pieces put together an automated workflow for data flowing in and out of EnergyCAP. This workflow included:
 
-Problem: need to put together an automated workflow for data flowing in and out of EnergyCAP. This workflow included:
 * Supporting multiple environments
 * Invoking compiled executables
 * Invoking REST APIs
-* Logging
 * Reading/writing text files
 * Parsing JSON
 
-What kind of technology could solve this problem?
+What kind of technology could glue all these things?
 
 One of our technical leads recommended PowerShell, and the success of that project resulted in PowerShell making its way into many different solutions.
 
@@ -57,6 +47,24 @@ Over the years, I've found more and more uses for PowerShell when automating rep
 Some examples are adding a library of time-saving functions to help me get around my repositories and EnergyCAP resources (which I will show you how to do), checking for frequently-occurring manual mistakes in report release ZIPs, interacting with external APIs, web scraping, managing credentials for my scripts, and a variety of other uses.
 
 It's become a tenet of mine: Don't just remember how to do it; figure it out and then write a PowerShell script to do it! I'm not the only one thinking this way. There is a public gallery of PowerShell scripts and modules which are easy to install and use in your own projects.
+
+## 4. PowerShell Multi-Tool
+
+"When all you have is a hammer, every problem looks like a nail." 
+* I'd like to encourage you to think of PowerShell as your trusty multi-tool where you can just add your own blades over time
+* This is true of all scripting languages, but PowerShell brings a lot of great stuff along with it
+
+Informal poll: Raise hand if you are a...
+* Rank beginner to Powershell
+* Pretty decent with it
+* You're THE POWERSHELL HERO
+
+## 5. What is PowerShell?
+- ONTOLOGY: Microsoft's reimagined command-line interface for working with their technologies.
+    - It is a successor to cmd.exe and VBScript which is informed by the strengths and weaknesses of each, as well as being influenced by other scripting languages
+- FEATURES: From the command line, provides access to environment variables, PATH variable access, drive and directory navigation, execution of scripts, file I/O, interaction with RESTful APIs, PC administration, and much more.
+- SYNTAX: You'll find that PowerShell is an opinionated technology which, when the syntax and fundamental concepts are understood, make it very natural to discover and extend.
+
 
 ## Why should I care about PowerShell?
 
@@ -81,12 +89,6 @@ It's become a tenet of mine: Don't just remember how to do it; figure it out and
     - Thanks to the "aliases" feature, you already have a handle on PS syntax that you bring from other systems
     - C# developers and people familiar with COM objects will enjoy having familiar APIs at their fingertips
     - If you spend the time building up your PowerShell "swiss army knife", you will end up with a very personalized, comfortable experience, even one which can be ported from PC to PC.
-
-## What is PowerShell?
-- ONTOLOGY: Microsoft's reimagined command-line interface for working with their technologies.
-    - It is a successor to cmd.exe and VBScript which is informed by the strengths and weaknesses of each, as well as being influenced by other scripting languages
-- FEATURES: From the command line, provides access to environment variables, PATH variable access, drive and directory navigation, execution of scripts, file I/O, interaction with RESTful APIs, PC administration, and much more.
-- SYNTAX: You'll find that PowerShell is an opinionated technology which, when the syntax and fundamental concepts are understood, make it very natural to discover and extend.
 
 ### PowerShell concepts
 
