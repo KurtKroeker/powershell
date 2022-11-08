@@ -1,31 +1,17 @@
 # Why Developers should love Powershell
 
 Author: Kurt Kroeker
-Last Updated: 10/11/2019
+Last Updated: 10/25/2022
+
+## 1. Title Slide
 
 Intro
-* Welcome to "Why Developers should love Powershell"!
-* This is my first technical presentation outside EnergyCAP office doors, so please be gentle with me! 
-    * I'm much more comfortable being in front of people when I have a violin, guitar, mandolin, whatever in my hands. 
+* Welcome to my talk, "Why Developers should love Powershell"!
+* This is my second time giving this talk, the last time was at TechBash 2019, pre-COVID!
+* I'm very enthusiastic about PowerShell, it's one of the most-used tools in my digital toolbox!
 
-## About Kurt
-
-* Kurt Kroeker, Sr. Software Developer at EnergyCAP, Inc. for 11 years
-    * Currently working as part of the back-end team developing RESTful APIs for the core EnergyCAP product and related services
-* Lifelong State College, PA resident - State High, University Park, part-time ECAP during Junior year
-* Father of 4: Josephine, Cecilia, Eleanor, George
-* Spare time(!!!) fiddler and play mandolin, guitar; I occasionally play in a couple of bands located in the State College area
-
-## About EnergyCAP
-
-* EnergyCAP is an enterprise-level utility bill accounting app, which means our software generates customer value from utility-related information such as vendor bills, meter readings, and weather data
-* The value we provide is in the form of utility bill analysis, splitting utility costs among many different customers (which includes generating our own utility bills), and creating configurable dashboards showing the system metrics our customers care about.
-* Some of our clients are City of Philadelpia, Penn State University, University of Nebraska Lincoln, Accenture, the Smithsonian Institution
-
-## About This Talk/Agenda
-
+### About This Talk/Agenda
 * **Talking**
-    * Kurt's PowerShell Background
     * Why should I care about PowerShell?
 * **Demos**
     * Introduction to PowerShell
@@ -34,130 +20,216 @@ Intro
 * **Resources**
 * **Q & A**
 
-## Powershell
+## 2. About Kurt
+
+* Kurt Kroeker, Sr. Integration Software Developer at EnergyCAP, LLC for 14 years
+    * Currently working as part of the integrations team developing services that integrate with our flagship software, EnergyCAP.
+* Lifelong State College, PA resident - Penn State University grad ("WE ARE!")
+* Father of 3 girls and a boy: Josephine, Cecilia, Eleanor, George
+* In my free time, I enjoy playing music with people. I play fiddle, mandolin, and guitar, I occasionally play out in a couple of bands located in the State College area.
+
+## 3. PowerShell and Me
+
+My introduction to PowerShell began with a problem: need to glue together various pieces put together an automated workflow for data flowing in and out of EnergyCAP. This workflow included:
+
+* Supporting multiple environments
+* Invoking compiled executables
+* Invoking REST APIs
+* Reading/writing text files
+* Parsing JSON
+
+What kind of technology could glue all these things?
+
+One of our technical leads recommended PowerShell, and the success of that project resulted in PowerShell making its way into many different solutions.
+
+Over the years, I've found more and more uses for PowerShell when automating repetitive tasks in my development work. 
+
+Some examples are adding a library of time-saving functions to help me get around my repositories and EnergyCAP resources (which I will show you how to do), checking for frequently-occurring manual mistakes in report release ZIPs, interacting with external APIs, web scraping, managing credentials for my scripts, and a variety of other uses.
+
+It's become a tenet of mine: Don't just remember how to do it; figure it out and then write a PowerShell script to do it! I'm not the only one thinking this way. There is a public gallery of PowerShell scripts and modules which are easy to install and use in your own projects.
+
+## 4, 5. PowerShell Multi-Tool
 
 "When all you have is a hammer, every problem looks like a nail." 
-* I'd like to encourage you to think of PowerShell as your Swiss Army Knife, but one where you can just add your own blades over time
+* I'd like to encourage you to think of PowerShell as your trusty multi-tool where you can just add your own blades over time
 * This is true of all scripting languages, but PowerShell brings a lot of great stuff along with it
 
 Informal poll: Raise hand if you are a...
 * Rank beginner to Powershell
 * Pretty decent with it
-* You're a PowerShell ninja and want to come up and do this talk for me
+* You're THE POWERSHELL HERO
 
-That was my last attempt to get out of this presentation. :)
+Modernization - a thoughtful reimagining of the commandline that embraces modern technologies and keeps getting better
+Orchestration - supports orchestration of diverse processes to create powerful workflows
+Navigation - similar experience navigating the file system, registry keys, and object hierarchies
+Automation - don't repeat those manual, error-prone tasks or give yourself carpal tunnel syndrome
+Democritization - open source, personalizable, and extensible via the PowerShell community
 
-## My PowerShell Background
+## 6. What is PowerShell?
+- Originally called "Monad", PowerShell is Microsoft's reimagined, open source, .NET-based command-line interface for working with their technologies.
+    - It is a successor to cmd.exe and VBScript which is informed by the strengths and weaknesses of each, as well as being influenced by other scripting languages
+- From the command line, provides access to environment variables, PATH variable access, drive, registry, and directory navigation, execution of scripts, file I/O, interaction with APIs, PC administration, Azure automation, and much more.
+- You'll soon find that PowerShell is a strongly opinionated technology which, when the syntax and fundamental concepts are understood, make it very natural to discover and extend.
 
-Back in the 2012, Miami-Dade County (MDC) needed to put together an automated workflow for data flowing in and out of EnergyCAP. This workflow included:
-* Supporting 2 environments (Test and Production)
-* Importing bills from an EDI format
-* Executing 4 custom A/P interfaces and verifying the results
-* Setting bill flags on the new bills
-* Executing a legacy console app to audit the bills, later replaced with making API calls to a newer version of our software
-* Logging was required for all of these functions, and they required file manipulation, dealing with JSON data, and even sending emails with summaries of the log. 
-
-What kind of technology could solve this problem?
-
-One of our technical leads, Chris Houdeshell, recommended PowerShell as a solution to me and helped me get the project off and running. It was a successful project, and a number of our clients have similar workflow automation scripts for their environments.
-
-By the way, Chris is here at TechBash and presented "Recovery by Design: A Postmortem Adventure" yesterday. Hopefully you all enjoyed his presentation!
-
-Over the years, I've found more and more uses for PowerShell when automating repetitive tasks in my development work. 
-Some examples are adding a library of time-saving functions to help me get around my repositories and EnergyCAP resources (which I will show you how to do), checking for frequently-occurring manual mistakes in report release ZIPs, interacting with external APIs, web scraping, managing credentials for my scripts, and a variety of other uses.
-
-I'm not the only one! PowerShell 
-
-It's become a tenet of mine: Don't just remember how to do it; figure it out and then write a PowerShell script to do it!
-
-## Why should I care about PowerShell?
+## 7. Why should I care about PowerShell?
 
 1) It is POWERFUL
-    - Scripting, especially when it has hooks into as many things as PowerShell does, helps you do a lot of time-consuming stuff very quickly and accurately
+    - Scripting, especially when it has hooks into as many things as PowerShell does, helps you do a lot of otherwise time-consuming stuff very quickly and accurately
     - It's GREAT for chopping data quickly, especially XML, CSV, and JSON
-    - Your favorite .NET APIs are always available to you. INTERACT: How many .NET developers do we have here?
+    - Your favorite .NET APIs are available to you. INTERACT: How many .NET developers do we have here?
     - It's fast - you can type and tab faster than you can point and click, and available PowerShell IDEs are lightweight and well-featured. The rinse/repeat cycle is very fast.
 2) It is EVERYWHERE
-    - It's in all versions of Windows since XP
+    - It's in Windows
     - It's in Azure
         - Deploy ARM
         - Nice suite of built-in PowerShell commands for working with Azure
-    - Since August 2016 with PowerShell Core, it's cross-platform and open source
-    - It's in EnergyCAP code:
+    - It's cross-platform and open source
+    - It's in your codebase:
         - Automation scripts built for clients like MDC
         - ECAP codebase: `C:\ecap\energycap\contrib\Loco`, `build.ps1`, etc.
         - Reports repository
-    - It is embedded in Visual Studio Code, Visual Studio
-    - There are hooks into Powershell from some platforms we use such as OctopusDeploy, JAMS
+    - It is embedded into Visual Studio Code
+    - Various platforms are intentional providing hooks into Powershell (e.g. OctopusDeploy, JAMS, TeamCity)
 2) It is FAMILIAR
-    - Thanks to aliases, you already have a handle on PS syntax that you bring from other systems
+    - Thanks to the "aliases" feature, you already have a handle on PS syntax that you bring from other systems
     - C# developers and people familiar with COM objects will enjoy having familiar APIs at their fingertips
-    - If you spend the time building up your PowerShell "swiss army knife", you will end up with a very customized, very comfortable experience
+    - If you spend the time building up your PowerShell "swiss army knife", you will end up with a very personalized, comfortable experience, even one which can be ported from PC to PC.
 
-## What is PowerShell?
-- Microsoft's reimagined command-line interface for working with their technologies (successor to cmd.exe and VBScript)
-- Like cmd.exe on steroids; includes everything I can think of from cmd.exe; access to system environment variables, directory navigation, execution of scripts, file I/O, interactions with RESTful APIs, PC administration, and much more.
+### 8. PowerShell concepts
 
-### PowerShell concepts
+So let's get to some demos and see what PowerShell looks like in action!
 
-So let's get to some demos and see how PowerShell looks, in action!
+- How do you get to the PowerShell console?
 
-- PS Console
+* Can get to it from 
+    * Start Menu
+    * Run interface (Win + r)
+    * cmd.exe
+* Chances are you might already have a terminal open right in front of you in VS Code
+    (Ctrl + Shift + ~)
 
-* Get to it from Start Menu, Run interface (Win + r), cmd.exe
-* Chances are you already have a terminal open right in front of you in Visual Studio or VS Code.
+- Windows PowerShell vs. PowerShell Core
 
-Among other things, `Get-Location` tells you where you are
+Windows PowerShell -> powershell
+- ships with Windows
+- version 5.1
+- built on .NET 4.5 Framework
+- PowerShell basics will still apply if all you have access to is Windows PowerShell, but if it's an option, I recommend installing PowerShell Core.
+
+PowerShell Core -> pwsh
+- requires installation
+- cross-platform (Windows, Mac OS, Linux)
+- built on .NET Core (dotnet 6.0)
 
 - commandlets
 
-* Think of commandlets as PowerShell functions which encompass programmatic work of some kind
-* Cmdlets are built into PowerShell or installed along with programs you install or on-demand by you when you install a module
-* Cmdlets are different from PowerShell "functions" in that they are actually written in compiled .NET code, while functions are pure PowerShell syntax
+Let me introduce you to your first commandlet: `Get-ChildItem`
 
-Structure of the commands is "Verb-Noun"
+* Commandlets are PowerShell commands which encompass programmatic work of some kind
+* The cmdlets you have available to you in a session are
+    * built into PowerShell
+    * installed along with other applications
+    * installed as part of a module
+* Cmdlets are different from PowerShell "functions" in that cmdlets are written in compiled .NET code while functions are written in pure PowerShell syntax
 
-E.g `Get-Verb` gets a list of verbs approved for use in PowerShell commands. As you will see, I'm not very consistent with my naming schemes, but hey, I'm getting better.
+Conventional structure of both commandlets and functions is "Verb-Noun"
+    Consistent use of this convention unlocks PowerShell's discoverability; all commandlets are structured in this way
+This is why I said earlier that PowerShell is an opinionated technology.
+
+Let's learn a few more commandlets that will help you discover the power that you have access to.
 
 E.g. `Get-Command` will get you all the available commands in the PowerShell ecosystem. Includes Windows cmdlets, 3rd-party cmdlets, and your custom functions.
+    get-command -Verb Update
+    get-command -Noun Item
+    Get-Command -Module EnergyCap.PowerShell
 
-E.g. `Get-Help` gets help documentation for the provided commandlet
+If you're good about naming your functions, you can even easily filter the commandlets with the `-Verb` and `-Noun` params to `Get-Command`. 
+You lose this benefit if you don't stick to the Verb-Noun format. 
 
-If you're good about naming your functions, you can even easily filter the commandlets with the `-Verb` and `-Noun` params to `Get-Command`. You lose this benefit if you don't stick to the Verb-Noun format.
-This concept of a naming scheme makes PowerShell very discoverable. 
+E.g. `Get-Help` gets help documentation for the provided commandlet. `-Online` parameter will even bring you directly to online help for the commandlet.
+    get-help get-childitem
 
-`Get-Member` is a useful command to know. If you want to get a list of all the available properties and methods for a PS object, this is what you need.
+E.g `Show-Command` discovered while prepping for this talk; allows you to browse available commandlets by module!
+    show-command dir
+    show-command
 
-A couple veeery useful ones:
-`Get-ChildItem`
-`Invoke-SqlCmd`
-`Out-File -encoding UTF8` (BE CAREFUL WITH ENCODING)
+E.g `Get-Verb` gets a list of verbs approved for use in PowerShell commands
+
+- passing parameters
+
+PowerShell commandlets and functions can accept parameters
+    * by position `Get-ChildItem *.xlsx`
+    * by name `Get-ChildItem -Filter *report*`
+    * mixture of both `Get-ChildItem *.zip -Filter *bar* -File`
+    * splatting
+
+Parameter values in powershell can be passed
+    * without quotes
+    * with single quotes (no string interpolation)
+    * with double quotes (with string interpolation)
+
+Frequently, parameters for PowerShell commandlets have a limited set of possible values. The CLI is aware of these scenarios, and you can discover them using the TAB key.
+    get-command -module <TAB>
+
+- working with objects, not text
+
+In PowerShell, you're working with complex objects. You may find this a mindshift from working in other CLIs which involve only working with strings.
+Each commandlet accepts objects as input and returns them as output, and the fact that you can "pipe" objects from commandlet to commandlet is very powerful.
+
+To understand what kind of object you're working with, `Get-Member` is a useful command to know. If you want to get a list of all the available properties and methods for a PS object, this is what you need.
 
 - aliases
 
-PowerShell automatically creates aliases for the cmdlets. Many of them have been borrowed from other CLIs to make PowerShell easy to use for Unix and Linux users.
+Aliases are expressions that point to a commandlet.
+PowerShell automatically creates aliases for many the cmdlets. Many of them have been borrowed from other CLIs to make PowerShell easy to use for CMD, Unix and Linux users.
+Two advantages:
+    keeping scripts and commands brief
+    lets you personalize your commands while still honoring the Verb-Noun convention
 
 E.g. `dir`, `ls`, and `gci` are all aliases for the `Get-ChildItem` cmdlet.
 
-You can create your own aliases with `Set-Alias`
+Remember what I said before about PowerShell being "familiar"? Aliases make it possible for you to come from a bash or cmd background and immediately start getting work done in the PowerShell CLI.
+
+You can see what aliases are available with `Get-Alias` and create your own aliases with `Set-Alias`
+
+- pipelines
+
+    "Pipelines act like a series of connected segments of pipe. Items moving along the pipeline pass through each segment." 
+
+    Commandlets return objects. The pipe operator passes these return objects through to the next commandlet, which can be piped to another, and so on.
+
+    Get-ChildItem
+    Get-ChildItem|Where-Object Extension -eq ".docx"
+    Get-ChildItem|Where-Object Extension -eq ".docx"|Select-Object Name,BaseName,CreationTime
+    Get-ChildItem|Where-Object Extension -eq ".docx"|Select-Object Name,BaseName,CreationTime|ConvertTo-Json
 
 - variables
 
-PowerShell variables are extremely flexible. They are *not* type safe unless you explicitly set the object type during initialization, and even then, PowerShell is happy to convert types for you if a conversion exists.
+Running commands is all well and good, but let's move on to storing their inputs and outputs with PowerShell variables using the almighty dollar sign.
 
-Here's how you initialize typed variables: [string], [xml]
+`$x = "Hello, world!"`
 
-**DEMO: XML contained in cd_catalog.xml**
+Variables in PowerShell are extremely flexible. They are *not* type safe unless you explicitly set the object type during initialization, and even then, PowerShell is quite happy to convert types for you if a conversion exists.
 
-What are my available variables? Use `Get-Variable`
+Initialize typed variables using square brackets around the type. You can use the fully-qualified type name or the short version: [System.String], [xml]
+The square brackets also allow you to cast variables.
+
+You may ask, what are my available variables? Use `Get-Variable` to see.
+
+## 9. PowerShell Script Files
 
 - script files
 
-Don't type it out every time!
+After iterating your script in the command line, you want to have it available for use in the future. Here's how you do it:
 
 PowerShell scripts are stored in files with a "*.ps1" suffix. They may have code for a single function, or they may be libraries of functions.
+They may even have return values.
 
-You can pass parameters to PS1 files, you can even make them mandatory
+You can define input parameters in PS1 files, you can even make them mandatory
+
+param(
+    $MyParameter
+)
 
 `[Parameter(Mandatory = $true)]`
 
@@ -165,15 +237,17 @@ You can pass parameters to PS1 files, you can even make them mandatory
 
 While you can contain PowerShell code at the file level, you can also declare multiple code functions within a single PS script file. These can be available within a single PS script execution or, when loaded into session memory, they can be used over and over again.
 
-- pipelines
+- control flow
 
-    "Pipelines act like a series of connected segments of pipe. Items moving along the pipeline pass through each segment." 
-    
-    **DEMO: demo_pipelines.ps1**
+In the context of a PowerShell script, can take advantage of some of the more verbose programmatic control flow mechanisms that are common to many languages.
 
-Resource: https://docs.microsoft.com/en-us/powershell/scripting/learn/understanding-the-powershell-pipeline?view=powershell-5.1
+* if/elseif/else
+* switch
+* for/foreach/while/do-while
 
 - operators
+
+    Conditional Operators
 
     -eq, -ne, -gt, -lt, -like, -and, -or, -not
 
@@ -185,87 +259,107 @@ Resource: https://docs.microsoft.com/en-us/powershell/scripting/learn/understand
 
     Can use regex operators
 
+    Other Operators
+
     -whatif
 
     For some actions which are potentially destructive, you can see what WOULD happen without actually performing the action
 
-## Tips working with PowerShell
+    -split
 
-- Get-Help, Get-Command, Get-Member
+    String splitting
 
-One of the things I like best about learning PowerShell and extending my knowledge of it is how discoverable everything is. There are three powerful commandlets built into PowerShell which make use of PowerShell's comment-based help system:
+    -is
 
-Get-Help will format documentation attached to the commandlet or function, and it will 
+    Type validation
 
-- Get-Help, -Command, -Member
+- Context - $_
 
-I mentioned the high discoverability of PowerShell functionality earlier. I want to quickly review them a bit more, and dig deeper into why why these work so well and how you can leverage the power of comment-based help.
-
-Get-Help is good for your code, not just pre-packaged code; good practice to document using comment-based help. Keep your PS documentation up to date along with your source code.
-
-**DEMO: demo_commentBasedHelp.ps1**
-
-- Love the tab key
-
-PowerShell cmdlets do not display their arguments, and you're not using your mouse, so you can't hover over and see what's available in the PowerShell prompt. Use the tab key to view the available arguments and, in some cases, their possible arguments.
-
-- Love pipelines and $_.
-
-You can avoid traditional for-loops by "piping" the results of one command into another. PowerShell gives you a powerful contextual variable $_. to reference the looped item.
+You can avoid traditional for-loops by "piping" the results of one command into another. PowerShell gives you a powerful contextual variable $_. to reference the current item.
 
 `ForEach-Object` and `Where-Object`
 
-- Love your PowerShell profile
+- Error handling with $Error
+Array of "ErrorRecord" objects representing exceptions encountered in this PS session in DESCENDING order. The 0th ErrorRecord is the most recent.
 
-If you get tired of loading PS1 files whenever you want a common function available, add the functions you use the most to your Microsoft.PowerShell_profile.ps1 file. Save it to your C:\Users\kurtk\Documents\WindowsPowerShell folder. You might even want to put it in source control.
+This may be helpful for you to know about when tracking and handling exceptions in your script code and examine the exceptions more deeply. The actual .NET exception object is there in the properties when you drill down.
 
-- Love the up-arrow
+## 10. PowerShell Working Tips
 
-This is common to most CLIs, but you can always get your commands back by hitting the up arrow to get the previous command, even from session to session.
+- Visual Studio Code with the PowerShell plugin
 
-- Love hash tables
+Get PowerShell debugging, linting, intellisense, and more! While Windows includes the "PowerShell Integrated Scripting Environment (ISE)" for Windows PowerShell, I do 100% of my own PowerShell development in the CLI or VS Code.
 
-If you want a concise but powerful dictionary-like object to work with, you'll love hash tables. They're easy to initialize and act a lot like dynamic objects in C# or regular objects in JavaScript:
+- Comment-based help
+
+I mentioned the high discoverability of PowerShell functionality earlier. Let's take a look at how you can leverage the power of comment-based help.
+
+For your PowerShell script files, you can comment single lines of code using the pound sign # or multiple lines using the gt/lt+pound sign syntax: 
+    <# #>
+
+Comment-based help is layered on top of multi-line commenting, and is an opinionated way to represent documentation for your scripts in a way that keeps code changes and documentation in sync.
+
+Get-Help is good for your code, not just pre-packaged code.
+
+- Tab key
+
+PowerShell cmdlets do not display their arguments, and you're not using your mouse, so you can't hover over and see what's available in the PowerShell prompt. Use the tab key to view the available arguments and, in some cases, their possible arguments.
+
+Auto-complete ALL the things!
+
+- Hotkeys
+
+Up/Down arrows - navigate previous commands
+Left arrow - accept autocomplete from history
+Ctrl + R - search history for previous commands
+Ctrl + C - cancel running command
+Display available options with Ctrl + <SPACE>
+
+- Your PowerShell profile
+
+If you get tired of loading PS1 files whenever you want a common function available, add the functions you use the most to your Microsoft.PowerShell_profile.ps1 file. You might even want to put it in source control. Discover where it is using the $PROFILE variable.
+
+- Love hash tables and PSCustomObjects
+
+If you want a concise but powerful dictionary-like object to work with, you'll love hash tables. They're terse to initialize and act a lot like dynamics in C# or JavaScript objects:
 
 `$myHashTable = @{ Name = "Kurt Kroeker"; Age = 31; Occupation = "Software Guy" }`
 
 They even give you autocomplete for properties, including properties with spaces in the names!
 
-- Love working with JSON and CSV
+To take things to the next level, you can also build PSCustomObjects on the fly.
+You can start by initializing the PSCustomObject and then adding members to it
+
+I like to add NoteProperties to construct objects for serialization, analysis
+You can also add ScriptMethods to objects to define custom behavior
+
+`Add-Member -InputObject $a -Name TestMethod -Value { Write-Host "You invoked me!" } -MemberType ScriptMethod`
+
+- Working with JSON and CSV
 
 PowerShell comes with niceties for working with data in XML, CSV and JSON format:
 
 `ConvertFrom-CSV` and `ConvertTo-Csv`
 `ConvertFrom-Json` and `ConvertTo-Json`
 
-**DEMO: cd_catalog.xml**
-**DEMO: places.json**
-**DEMO: SalesJan2009.csv**
+`Format-Table` may be useful to you as well when you're trying to view tabular data.
+`Format-List` if you want to view items vertically
 
-Format-Table may be useful to you as well when you're trying to view data.
-
-- Love Invoke-RestMethod
+- Love your API interactions
 
 **DEMO: demo_apiCalls.ps1**
 
-- Love the Windows PowerShell ISE and VS Code
+- Love modules
 
-From Start Menu: "PowerShell ISE"
-
-Nice IDE (or...ISE!) for composing and debugging PowerShell commands. Includes variable inspection, debugging with step-through and step-over, etc.
-
-From PowerShell: `ise` or `powershell_ise`
+Show PowerShell Gallery
+Custom PowerShell module that we publish to a private NuGet repository for our internal users to help with client automation
+Az module useful for working with Azure resources
 
 - Love .NET!
 
 I just need to keep pointing out that everything you're seeing in this session is in the context of the .NET or .NET core framework. The same structures, APIs, libraries are available to you throughout, so it will feel very familiar to .NET developers.
 
-### Gotchas
-
-#### . vs. .\
-When you're navigating directory structures in PS, you can execute PS1 files directly by using the `.\myFileName.ps1` syntax. The command as expressed here will simply RUN the script.
-
-However, if you use the period, you can *include* the PS1 module for use, if it contains functions you want to use: `. .\myFileName.ps1` will both *execute* the script AND register the functions for use within the PowerShell session. This is called "dot sourcing" the script.
+## 11. Gotchas
 
 #### ExecutionPolicy
 PowerShell has some very nice security features to protect users from malicious script execution, one of them being the ExecutionPolicy.
@@ -281,9 +375,6 @@ There are a number levels of ExecutionPolicy. From most stringent to least strin
 
 If you find script files or modules online that you want to try, you may find yourself having to negotiate the ExecutionPolicy, which may require elevated access to change. 
 I recently hit this with a script I needed to resize a batch of images. I couldn't install the module; but I reviewed the script within the module and easily adapted it.
-
-Resource: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6
-Resource: https://gallery.technet.microsoft.com/scriptcenter/Resize-Image-A-PowerShell-3d26ef68
 
 #### Working with strings
 - Watch your quotes!
@@ -313,16 +404,11 @@ Additionally, if you have a complex object to use with string interpolation, you
 
 In this example, you need to surround the property reference with another $(). Then the interpolation will work correctly.
 
-#### Error handling with $Error
-Array of "ErrorRecord" objects representing exceptions encountered in this PS session in DESCENDING order. The 0th ErrorRecord is the most recent.
-
-This may be helpful for you to know about when tracking and handling exceptions in your script code and examine the exceptions more deeply. The actual .NET exception object is there in the properties when you drill down.
-
 #### Relative path handling
 One of the most awkward PS-isms I've had to deal with, which is an issue in all versions that I've used, is handling (or lack thereof) of relative paths to files and directories.
 
 #### Old code on the internet
-Since PowerShell has evolved quite a bit over time, make sure you're always checking the timestamps on the articles and code samples you read. Something that used to be really hard (e.g. JSON manipulation before PowerShell 3.0 and `ConvertFrom-Json`) might have become really easy.
+Since PowerShell has evolved a LOT over time, make sure you're always checking the timestamps on the articles and code samples you read. Something that used to be difficult (e.g. JSON manipulation before PowerShell 3.0 and `ConvertFrom-Json`, getting response bodies from web request errors, etc.) might have become really easy.
 
 #### Is it an array?
 Sometimes you may find that variables which you expected to be an array are not. For example, the much-used `Get-ChildItem` returns an array of files OR a single file (if there was only 1). For example:
@@ -343,16 +429,42 @@ Getting the syntax right was super frustrating when I wanted to execute an EXE w
 
 **DEMO: demo_consoleArgs.ps1**
 
-#### PowerShell and TLS
-PowerShell is configured to make all web requests using TLS 1.0, so if you're making web requests against a web server with TLS 1.1+ enabled, you'll quickly discover that Invoke-RestMethod and Invoke-WebRequest calls will fail, perhaps with an error message like this:
+## 12. Conclusion/Q&A
 
-```The request was aborted: Could not create SSL/TLS secure channel.```
+- Q: Why should I use PowerShell Core vs. regular?
+    - [NO LONGER TRUE!] - PSCore feature set is smaller b/c .NET Core is newer
+    - Run PS-based automation in other OSs
+    - .NET Core generally faster than .NET Framework
+    - PowerShell core is open source; see the guts
+    - NOTE: can't use ISE in PSCore...use VSCode instead
 
-You can configure PowerShell to communicate with TLS 1.1 and 1.2 by modifying the ServicePointManager's SecurityProtocol setting. Try running this snippet in PowerShell and retry your request:
+- Q: Why should I use Visual Studio Code vs the ISE?
+    - VS Code
+        - Is much nicer for managing projects/workspaces
+        - More customizable than the ISE (e.g. default terminals for PS or PSCore)
+        - Debugging experience was prettier
+        - NOW NO REASON NOT TO USE IT
+    - ISE
+        - Already installed everywhere
+        - Decent debugging experience
+        - ISE is not included as part of PowerShell Core; you'll have to use VS Code
 
-```[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12;```
+## 13. Resources
 
-Please note that this will ONLY affect your current PowerShell session. To make it stick, add this line to your PowerShell Profile.
+- Installing PS on macOS: https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6
+- Is my PS variable an array or not: http://thephuck.com/scripts/easy-way-to-check-if-your-powershell-variable-is-an-array-or-not/
+- Type Safety in PowerShell: http://www.winsoft.se/2009/01/type-safety-in-powershell/
+- PowerShell tutorial: https://www.tutorialspoint.com/powershell/index.htm
+- PowerShell in Wikipedia: https://en.wikipedia.org/wiki/PowerShell
+- Testing PowerShell scripts: https://devblogs.microsoft.com/scripting/what-is-pester-and-why-should-i-care/
+- PowerShell dev in VS Code: https://docs.microsoft.com/en-us/powershell/scripting/components/vscode/using-vscode?view=powershell-6
+- Save Excel as CSV: https://michlstechblog.info/blog/powershell-export-excel-workbook-as-csv-file/
+- Setting ExecutionPolicy: https://www.mssqltips.com/sqlservertip/2702/setting-the-powershell-execution-policy/
+- Version of .NET used by PowerShell: https://stackoverflow.com/questions/3344855/which-net-version-is-my-powershell-script-using
+- Niceties for working in git with PowerShell - posh-git: https://github.com/dahlbyk/posh-git
+- Microsoft Powershell Gallery (https://www.powershellgallery.com/)
+
+## 14. Go forth
 
 ## Subjects Not Demoed
 - Splatting arguments into functions/commandlets
@@ -366,37 +478,13 @@ Please note that this will ONLY affect your current PowerShell session. To make 
 - PSCustomObject creation
 - Add-Type to use DLLs, even create your own!
 - try/catch with PowerShell; error handling with $Error array of "ErrorRecord" types with the exception type and other details within, if you drill down.
+#### PowerShell and TLS
+PowerShell is configured to make all web requests using TLS 1.0, so if you're making web requests against a web server with TLS 1.1+ enabled, you'll quickly discover that Invoke-RestMethod and Invoke-WebRequest calls will fail, perhaps with an error message like this:
 
-## Q & A
+```The request was aborted: Could not create SSL/TLS secure channel.```
 
-- Q: Why should I use PowerShell Core vs. regular?
-    - PSCore feature set is smaller b/c .NET Core is newer
-    - Run PS-based automation in other OSs
-    - .NET Core generally faster than .NET Framework
-    - PowerShell core is open source; see the guts
-    - NOTE: can't use ISE in PSCore...use VSCode insteads
+You can configure PowerShell to communicate with TLS 1.1 and 1.2 by modifying the ServicePointManager's SecurityProtocol setting. Try running this snippet in PowerShell and retry your request:
 
-- Q: Why should I use Visual Studio Code vs the ISE?
-    - VS Code
-        - Is much nicer for managing projects/workspaces
-        - More customizable than the ISE (e.g. default terminals for PS or PSCore)
-        - Debugging experience was prettier
-        - However, integrated PS terminal was not as nice; quirks of text input, autocomplete not as nice; no colors
-    - ISE
-        - Already installed everywhere
-        - Decent debugging experience
-        - ISE is not included as part of PowerShell Core; you'll have to use VS Code
+```[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12;```
 
-## Resources
-- Installing PS on macOS: https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6
-- Is my PS variable an array or not: http://thephuck.com/scripts/easy-way-to-check-if-your-powershell-variable-is-an-array-or-not/
-- Type Safety in PowerShell: http://www.winsoft.se/2009/01/type-safety-in-powershell/
-- PowerShell tutorial: https://www.tutorialspoint.com/powershell/index.htm
-- PowerShell in Wikipedia: https://en.wikipedia.org/wiki/PowerShell
-- Testing PowerShell scripts: https://devblogs.microsoft.com/scripting/what-is-pester-and-why-should-i-care/
-- PowerShell dev in VS Code: https://docs.microsoft.com/en-us/powershell/scripting/components/vscode/using-vscode?view=powershell-6
-- Save Excel as CSV: https://michlstechblog.info/blog/powershell-export-excel-workbook-as-csv-file/
-- Setting ExecutionPolicy: https://www.mssqltips.com/sqlservertip/2702/setting-the-powershell-execution-policy/
-- Version of .NET used by PowerShell: https://stackoverflow.com/questions/3344855/which-net-version-is-my-powershell-script-using
-- Niceties for working in git with PowerShell - posh-git: https://github.com/dahlbyk/posh-git
-- Microsoft Powershell Gallery (https://www.powershellgallery.com/)
+Please note that this will ONLY affect your current PowerShell session. To make it stick, add this line to your PowerShell Profile.
