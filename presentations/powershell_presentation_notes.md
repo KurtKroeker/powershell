@@ -155,13 +155,6 @@ E.g `Show-Command` discovered while prepping for this talk; allows you to browse
 
 E.g `Get-Verb` gets a list of verbs approved for use in PowerShell commands
 
-- working with objects, not text
-
-In PowerShell, you're working with complex objects. You may find this a mindshift from working in other CLIs which involve only working with strings.
-Each commandlet accepts objects as input and returns them as output, and the fact that you can "pipe" objects from commandlet to commandlet is very powerful.
-
-To understand what kind of object you're working with, `Get-Member` is a useful command to know. If you want to get a list of all the available properties and methods for a PS object, this is what you need.
-
 - passing parameters
 
 PowerShell commandlets and functions can accept parameters
@@ -177,6 +170,13 @@ Parameter values in powershell can be passed
 
 Frequently, parameters for PowerShell commandlets have a limited set of possible values. The CLI is aware of these scenarios, and you can discover them using the TAB key.
     get-command -module <TAB>
+
+- working with objects, not text
+
+In PowerShell, you're working with complex objects. You may find this a mindshift from working in other CLIs which involve only working with strings.
+Each commandlet accepts objects as input and returns them as output, and the fact that you can "pipe" objects from commandlet to commandlet is very powerful.
+
+To understand what kind of object you're working with, `Get-Member` is a useful command to know. If you want to get a list of all the available properties and methods for a PS object, this is what you need.
 
 - aliases
 
@@ -216,6 +216,8 @@ The square brackets also allow you to cast variables.
 
 You may ask, what are my available variables? Use `Get-Variable` to see.
 
+## 9. PowerShell Script Files
+
 - script files
 
 After iterating your script in the command line, you want to have it available for use in the future. Here's how you do it:
@@ -234,6 +236,14 @@ param(
 - functions
 
 While you can contain PowerShell code at the file level, you can also declare multiple code functions within a single PS script file. These can be available within a single PS script execution or, when loaded into session memory, they can be used over and over again.
+
+- control flow
+
+In the context of a PowerShell script, can take advantage of some of the more verbose programmatic control flow mechanisms that are common to many languages.
+
+* if/elseif/else
+* switch
+* for/foreach/while/do-while
 
 - operators
 
@@ -263,13 +273,24 @@ While you can contain PowerShell code at the file level, you can also declare mu
 
     Type validation
 
-## Things to Love working with PowerShell
+- Context - $_
 
-- Love Visual Studio Code with the PowerShell plugin
+You can avoid traditional for-loops by "piping" the results of one command into another. PowerShell gives you a powerful contextual variable $_. to reference the current item.
+
+`ForEach-Object` and `Where-Object`
+
+- Error handling with $Error
+Array of "ErrorRecord" objects representing exceptions encountered in this PS session in DESCENDING order. The 0th ErrorRecord is the most recent.
+
+This may be helpful for you to know about when tracking and handling exceptions in your script code and examine the exceptions more deeply. The actual .NET exception object is there in the properties when you drill down.
+
+## 10. PowerShell Working Tips
+
+- Visual Studio Code with the PowerShell plugin
 
 Get PowerShell debugging, linting, intellisense, and more! While Windows includes the "PowerShell Integrated Scripting Environment (ISE)" for Windows PowerShell, I do 100% of my own PowerShell development in the CLI or VS Code.
 
-- Love comment-based help
+- Comment-based help
 
 I mentioned the high discoverability of PowerShell functionality earlier. Let's take a look at how you can leverage the power of comment-based help.
 
@@ -280,30 +301,23 @@ Comment-based help is layered on top of multi-line commenting, and is an opinion
 
 Get-Help is good for your code, not just pre-packaged code.
 
-- Love the tab key
+- Tab key
 
 PowerShell cmdlets do not display their arguments, and you're not using your mouse, so you can't hover over and see what's available in the PowerShell prompt. Use the tab key to view the available arguments and, in some cases, their possible arguments.
 
 Auto-complete ALL the things!
 
-- Love your context - $_
+- Hotkeys
 
-You can avoid traditional for-loops by "piping" the results of one command into another. PowerShell gives you a powerful contextual variable $_. to reference the current item.
+Up/Down arrows - navigate previous commands
+Left arrow - accept autocomplete from history
+Ctrl + R - search history for previous commands
+Ctrl + C - cancel running command
+Display available options with Ctrl + <SPACE>
 
-`ForEach-Object` and `Where-Object`
-
-- Love your PowerShell profile
+- Your PowerShell profile
 
 If you get tired of loading PS1 files whenever you want a common function available, add the functions you use the most to your Microsoft.PowerShell_profile.ps1 file. You might even want to put it in source control. Discover where it is using the $PROFILE variable.
-
-- Quickly find previous commands
-
-This is common to most CLIs, but you can navigate your previous commands using the up/down arrows
-
-Use Ctrl + R to search your previous commands
-Use the left arrow to accept PowerShell's predictive auto-completion
-
-- Love your available options with Ctrl + <SPACE>
 
 - Love hash tables and PSCustomObjects
 
@@ -321,14 +335,15 @@ You can also add ScriptMethods to objects to define custom behavior
 
 `Add-Member -InputObject $a -Name TestMethod -Value { Write-Host "You invoked me!" } -MemberType ScriptMethod`
 
-- Love working with JSON and CSV
+- Working with JSON and CSV
 
 PowerShell comes with niceties for working with data in XML, CSV and JSON format:
 
 `ConvertFrom-CSV` and `ConvertTo-Csv`
 `ConvertFrom-Json` and `ConvertTo-Json`
 
-`Format-Table` may be useful to you as well when you're trying to view data.
+`Format-Table` may be useful to you as well when you're trying to view tabular data.
+`Format-List` if you want to view items vertically
 
 - Love your API interactions
 
@@ -344,7 +359,7 @@ Az module useful for working with Azure resources
 
 I just need to keep pointing out that everything you're seeing in this session is in the context of the .NET or .NET core framework. The same structures, APIs, libraries are available to you throughout, so it will feel very familiar to .NET developers.
 
-### Gotchas
+## 11. Gotchas
 
 #### ExecutionPolicy
 PowerShell has some very nice security features to protect users from malicious script execution, one of them being the ExecutionPolicy.
@@ -360,9 +375,6 @@ There are a number levels of ExecutionPolicy. From most stringent to least strin
 
 If you find script files or modules online that you want to try, you may find yourself having to negotiate the ExecutionPolicy, which may require elevated access to change. 
 I recently hit this with a script I needed to resize a batch of images. I couldn't install the module; but I reviewed the script within the module and easily adapted it.
-
-Resource: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6
-Resource: https://gallery.technet.microsoft.com/scriptcenter/Resize-Image-A-PowerShell-3d26ef68
 
 #### Working with strings
 - Watch your quotes!
@@ -392,11 +404,6 @@ Additionally, if you have a complex object to use with string interpolation, you
 
 In this example, you need to surround the property reference with another $(). Then the interpolation will work correctly.
 
-#### Error handling with $Error
-Array of "ErrorRecord" objects representing exceptions encountered in this PS session in DESCENDING order. The 0th ErrorRecord is the most recent.
-
-This may be helpful for you to know about when tracking and handling exceptions in your script code and examine the exceptions more deeply. The actual .NET exception object is there in the properties when you drill down.
-
 #### Relative path handling
 One of the most awkward PS-isms I've had to deal with, which is an issue in all versions that I've used, is handling (or lack thereof) of relative paths to files and directories.
 
@@ -422,31 +429,7 @@ Getting the syntax right was super frustrating when I wanted to execute an EXE w
 
 **DEMO: demo_consoleArgs.ps1**
 
-#### PowerShell and TLS
-PowerShell is configured to make all web requests using TLS 1.0, so if you're making web requests against a web server with TLS 1.1+ enabled, you'll quickly discover that Invoke-RestMethod and Invoke-WebRequest calls will fail, perhaps with an error message like this:
-
-```The request was aborted: Could not create SSL/TLS secure channel.```
-
-You can configure PowerShell to communicate with TLS 1.1 and 1.2 by modifying the ServicePointManager's SecurityProtocol setting. Try running this snippet in PowerShell and retry your request:
-
-```[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12;```
-
-Please note that this will ONLY affect your current PowerShell session. To make it stick, add this line to your PowerShell Profile.
-
-## Subjects Not Demoed
-- Splatting arguments into functions/commandlets
-    - Use @ instead of $ for splatting...
-- Azure resource interactions
-- PC user and administrative management
-- GUIs and PowerShell
-    - Building using Windows Forms...I prefer named parameters, Read-Host, Get-Credential
-    - I saw a desktop automation module out there
-    - Selenium has a PowerShell module; it's nice :)
-- PSCustomObject creation
-- Add-Type to use DLLs, even create your own!
-- try/catch with PowerShell; error handling with $Error array of "ErrorRecord" types with the exception type and other details within, if you drill down.
-
-## Q & A
+## 12. Conclusion/Q&A
 
 - Q: Why should I use PowerShell Core vs. regular?
     - [NO LONGER TRUE!] - PSCore feature set is smaller b/c .NET Core is newer
@@ -466,7 +449,8 @@ Please note that this will ONLY affect your current PowerShell session. To make 
         - Decent debugging experience
         - ISE is not included as part of PowerShell Core; you'll have to use VS Code
 
-## Resources
+## 13. Resources
+
 - Installing PS on macOS: https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6
 - Is my PS variable an array or not: http://thephuck.com/scripts/easy-way-to-check-if-your-powershell-variable-is-an-array-or-not/
 - Type Safety in PowerShell: http://www.winsoft.se/2009/01/type-safety-in-powershell/
@@ -479,3 +463,28 @@ Please note that this will ONLY affect your current PowerShell session. To make 
 - Version of .NET used by PowerShell: https://stackoverflow.com/questions/3344855/which-net-version-is-my-powershell-script-using
 - Niceties for working in git with PowerShell - posh-git: https://github.com/dahlbyk/posh-git
 - Microsoft Powershell Gallery (https://www.powershellgallery.com/)
+
+## 14. Go forth
+
+## Subjects Not Demoed
+- Splatting arguments into functions/commandlets
+    - Use @ instead of $ for splatting...
+- Azure resource interactions
+- PC user and administrative management
+- GUIs and PowerShell
+    - Building using Windows Forms...I prefer named parameters, Read-Host, Get-Credential
+    - I saw a desktop automation module out there
+    - Selenium has a PowerShell module; it's nice :)
+- PSCustomObject creation
+- Add-Type to use DLLs, even create your own!
+- try/catch with PowerShell; error handling with $Error array of "ErrorRecord" types with the exception type and other details within, if you drill down.
+#### PowerShell and TLS
+PowerShell is configured to make all web requests using TLS 1.0, so if you're making web requests against a web server with TLS 1.1+ enabled, you'll quickly discover that Invoke-RestMethod and Invoke-WebRequest calls will fail, perhaps with an error message like this:
+
+```The request was aborted: Could not create SSL/TLS secure channel.```
+
+You can configure PowerShell to communicate with TLS 1.1 and 1.2 by modifying the ServicePointManager's SecurityProtocol setting. Try running this snippet in PowerShell and retry your request:
+
+```[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12;```
+
+Please note that this will ONLY affect your current PowerShell session. To make it stick, add this line to your PowerShell Profile.
