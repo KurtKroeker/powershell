@@ -48,7 +48,7 @@ Some examples are adding a library of time-saving functions to help me get aroun
 
 It's become a tenet of mine: Don't just remember how to do it; figure it out and then write a PowerShell script to do it! I'm not the only one thinking this way. There is a public gallery of PowerShell scripts and modules which are easy to install and use in your own projects.
 
-## 4. PowerShell Multi-Tool
+## 4, 5. PowerShell Multi-Tool
 
 "When all you have is a hammer, every problem looks like a nail." 
 * I'd like to encourage you to think of PowerShell as your trusty multi-tool where you can just add your own blades over time
@@ -59,20 +59,19 @@ Informal poll: Raise hand if you are a...
 * Pretty decent with it
 * You're THE POWERSHELL HERO
 
-Modernization
-Orchestration
-Navigation
-Automation
-Democritization
+Modernization - a thoughtful reimagining of the commandline that embraces modern technologies and keeps getting better
+Orchestration - supports orchestration of diverse processes to create powerful workflows
+Navigation - similar experience navigating the file system, registry keys, and object hierarchies
+Automation - don't repeat those manual, error-prone tasks or give yourself carpal tunnel syndrome
+Democritization - open source, personalizable, and extensible via the PowerShell community
 
-## 5. What is PowerShell?
-- ONTOLOGY: Microsoft's reimagined command-line interface for working with their technologies.
+## 6. What is PowerShell?
+- Originally called "Monad", PowerShell is Microsoft's reimagined, open source, .NET-based command-line interface for working with their technologies.
     - It is a successor to cmd.exe and VBScript which is informed by the strengths and weaknesses of each, as well as being influenced by other scripting languages
-- FEATURES: From the command line, provides access to environment variables, PATH variable access, drive and directory navigation, execution of scripts, file I/O, interaction with RESTful APIs, PC administration, and much more.
-- SYNTAX: You'll find that PowerShell is an opinionated technology which, when the syntax and fundamental concepts are understood, make it very natural to discover and extend.
+- From the command line, provides access to environment variables, PATH variable access, drive, registry, and directory navigation, execution of scripts, file I/O, interaction with APIs, PC administration, Azure automation, and much more.
+- You'll soon find that PowerShell is a strongly opinionated technology which, when the syntax and fundamental concepts are understood, make it very natural to discover and extend.
 
-
-## Why should I care about PowerShell?
+## 7. Why should I care about PowerShell?
 
 1) It is POWERFUL
     - Scripting, especially when it has hooks into as many things as PowerShell does, helps you do a lot of otherwise time-consuming stuff very quickly and accurately
@@ -96,11 +95,11 @@ Democritization
     - C# developers and people familiar with COM objects will enjoy having familiar APIs at their fingertips
     - If you spend the time building up your PowerShell "swiss army knife", you will end up with a very personalized, comfortable experience, even one which can be ported from PC to PC.
 
-### PowerShell concepts
+### 8. PowerShell concepts
 
 So let's get to some demos and see what PowerShell looks like in action!
 
-- How do you get to PowerShell?
+- How do you get to the PowerShell console?
 
 * Can get to it from 
     * Start Menu
