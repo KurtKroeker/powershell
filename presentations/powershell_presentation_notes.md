@@ -59,6 +59,12 @@ Informal poll: Raise hand if you are a...
 * Pretty decent with it
 * You're THE POWERSHELL HERO
 
+Modernization
+Orchestration
+Navigation
+Automation
+Democritization
+
 ## 5. What is PowerShell?
 - ONTOLOGY: Microsoft's reimagined command-line interface for working with their technologies.
     - It is a successor to cmd.exe and VBScript which is informed by the strengths and weaknesses of each, as well as being influenced by other scripting languages
