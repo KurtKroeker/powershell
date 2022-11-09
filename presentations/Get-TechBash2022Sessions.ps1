@@ -22,12 +22,22 @@ $c|Out-File .\tb2022_sessions.xml
 [xml]$sessions=gc .\tb2022_sessions.xml
 $sessions.div.div[0].ul.li
     |%{ 
-        $session=$_; 
+        $session=$_
+        $rawTime = ($session.div|?{$_.class -eq 'sz-session__time'}).innerText
+        $day = $rawTime.Substring(0,3)
+        $times = $rawtime.Substring(3,$rawtime.length-3) -split '-'
+        $start = $times[0].trim()
+        $end = $times[1].trim()
         @{ 
             sessionId=$session.'data-sessionId'; 
             speaker=$session.ul.li.a.InnerText; 
             title=$session.h3.InnerText.trim(); 
             description=$session.p.InnerText; 
             room=($session.div|?{$_.class -eq 'sz-session__room'}|%{ @{ roomName=$_.innerText; roomId=$_.'data-roomid'} });
-            time=($session.div|?{$_.class -eq 'sz-session__time'}).innerText }
-    }|select sessionId,title,speaker,room|ConvertTo-Json|out-file .\sessions.json
+            rawTime = $rawTime;
+            day = $rawTime.Substring(0, 3);
+            start = $start;
+            end = $end
+        };
+
+    }|select sessionId,title,speaker,room,rawTime,day,start,end|ConvertTo-Json|out-file .\sessions.json
