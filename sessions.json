@@ -7,7 +7,10 @@
       "roomId": "24448",
       "roomName": "Kilimanjaro 7"
     },
-    "time": "Wed 10:20 am - 11:20 am"
+    "rawTime": "Wed 10:20 am - 11:20 am",
+    "day": "Wed",
+    "start": "10:20 am",
+    "end": "11:20 am"
   },
   {
     "sessionId": "335007",
@@ -17,7 +20,10 @@
       "roomId": "24449",
       "roomName": "Kilimanjaro 8"
     },
-    "time": "Wed 10:20 am - 11:20 am"
+    "rawTime": "Wed 10:20 am - 11:20 am",
+    "day": "Wed",
+    "start": "10:20 am",
+    "end": "11:20 am"
   },
   {
     "sessionId": "326636",
@@ -27,7 +33,10 @@
       "roomId": "24450",
       "roomName": "Kilimanjaro 9"
     },
-    "time": "Wed 10:20 am - 11:20 am"
+    "rawTime": "Wed 10:20 am - 11:20 am",
+    "day": "Wed",
+    "start": "10:20 am",
+    "end": "11:20 am"
   },
   {
     "sessionId": "343339",
@@ -37,7 +46,10 @@
       "roomId": "28022",
       "roomName": "Kilimanjaro 10"
     },
-    "time": "Wed 10:20 am - 11:20 am"
+    "rawTime": "Wed 10:20 am - 11:20 am",
+    "day": "Wed",
+    "start": "10:20 am",
+    "end": "11:20 am"
   },
   {
     "sessionId": "334410",
@@ -47,7 +59,10 @@
       "roomId": "28023",
       "roomName": "Kilimanjaro 2"
     },
-    "time": "Wed 10:20 am - 11:20 am"
+    "rawTime": "Wed 10:20 am - 11:20 am",
+    "day": "Wed",
+    "start": "10:20 am",
+    "end": "11:20 am"
   },
   {
     "sessionId": "331423",
@@ -57,7 +72,10 @@
       "roomId": "24448",
       "roomName": "Kilimanjaro 7"
     },
-    "time": "Wed 11:30 am - 12:30 pm"
+    "rawTime": "Wed 11:30 am - 12:30 pm",
+    "day": "Wed",
+    "start": "11:30 am",
+    "end": "12:30 pm"
   },
   {
     "sessionId": "334051",
@@ -67,7 +85,10 @@
       "roomId": "24449",
       "roomName": "Kilimanjaro 8"
     },
-    "time": "Wed 11:30 am - 12:30 pm"
+    "rawTime": "Wed 11:30 am - 12:30 pm",
+    "day": "Wed",
+    "start": "11:30 am",
+    "end": "12:30 pm"
   },
   {
     "sessionId": "330680",
@@ -77,7 +98,10 @@
       "roomId": "24450",
       "roomName": "Kilimanjaro 9"
     },
-    "time": "Wed 11:30 am - 12:30 pm"
+    "rawTime": "Wed 11:30 am - 12:30 pm",
+    "day": "Wed",
+    "start": "11:30 am",
+    "end": "12:30 pm"
   },
   {
     "sessionId": "333597",
@@ -87,7 +111,10 @@
       "roomId": "28022",
       "roomName": "Kilimanjaro 10"
     },
-    "time": "Wed 11:30 am - 12:30 pm"
+    "rawTime": "Wed 11:30 am - 12:30 pm",
+    "day": "Wed",
+    "start": "11:30 am",
+    "end": "12:30 pm"
   },
   {
     "sessionId": "329373",
@@ -97,7 +124,10 @@
       "roomId": "28023",
       "roomName": "Kilimanjaro 2"
     },
-    "time": "Wed 11:30 am - 12:30 pm"
+    "rawTime": "Wed 11:30 am - 12:30 pm",
+    "day": "Wed",
+    "start": "11:30 am",
+    "end": "12:30 pm"
   },
   {
     "sessionId": "331603",
@@ -107,7 +137,10 @@
       "roomId": "24448",
       "roomName": "Kilimanjaro 7"
     },
-    "time": "Wed 1:30 pm - 2:30 pm"
+    "rawTime": "Wed 1:30 pm - 2:30 pm",
+    "day": "Wed",
+    "start": "1:30 pm",
+    "end": "2:30 pm"
   },
   {
     "sessionId": "333739",
@@ -117,7 +150,10 @@
       "roomId": "24449",
       "roomName": "Kilimanjaro 8"
     },
-    "time": "Wed 1:30 pm - 2:30 pm"
+    "rawTime": "Wed 1:30 pm - 2:30 pm",
+    "day": "Wed",
+    "start": "1:30 pm",
+    "end": "2:30 pm"
   },
   {
     "sessionId": "372545",
@@ -127,7 +163,10 @@
       "roomId": "28022",
       "roomName": "Kilimanjaro 10"
     },
-    "time": "Wed 1:30 pm - 2:30 pm"
+    "rawTime": "Wed 1:30 pm - 2:30 pm",
+    "day": "Wed",
+    "start": "1:30 pm",
+    "end": "2:30 pm"
   },
   {
     "sessionId": "334979",
@@ -137,7 +176,10 @@
       "roomId": "24450",
       "roomName": "Kilimanjaro 9"
     },
-    "time": "Wed 1:30 pm - 2:30 pm"
+    "rawTime": "Wed 1:30 pm - 2:30 pm",
+    "day": "Wed",
+    "start": "1:30 pm",
+    "end": "2:30 pm"
   },
   {
     "sessionId": "334261",
@@ -147,7 +189,10 @@
       "roomId": "28023",
       "roomName": "Kilimanjaro 2"
     },
-    "time": "Wed 1:30 pm - 2:30 pm"
+    "rawTime": "Wed 1:30 pm - 2:30 pm",
+    "day": "Wed",
+    "start": "1:30 pm",
+    "end": "2:30 pm"
   },
   {
     "sessionId": "327643",
@@ -157,7 +202,10 @@
       "roomId": "24448",
       "roomName": "Kilimanjaro 7"
     },
-    "time": "Wed 2:50 pm - 3:50 pm"
+    "rawTime": "Wed 2:50 pm - 3:50 pm",
+    "day": "Wed",
+    "start": "2:50 pm",
+    "end": "3:50 pm"
   },
   {
     "sessionId": "334983",
@@ -167,7 +215,10 @@
       "roomId": "24449",
       "roomName": "Kilimanjaro 8"
     },
-    "time": "Wed 2:50 pm - 3:50 pm"
+    "rawTime": "Wed 2:50 pm - 3:50 pm",
+    "day": "Wed",
+    "start": "2:50 pm",
+    "end": "3:50 pm"
   },
   {
     "sessionId": "327000",
@@ -177,7 +228,10 @@
       "roomId": "28022",
       "roomName": "Kilimanjaro 10"
     },
-    "time": "Wed 2:50 pm - 3:50 pm"
+    "rawTime": "Wed 2:50 pm - 3:50 pm",
+    "day": "Wed",
+    "start": "2:50 pm",
+    "end": "3:50 pm"
   },
   {
     "sessionId": "327368",
@@ -187,7 +241,10 @@
       "roomId": "24450",
       "roomName": "Kilimanjaro 9"
     },
-    "time": "Wed 2:50 pm - 3:50 pm"
+    "rawTime": "Wed 2:50 pm - 3:50 pm",
+    "day": "Wed",
+    "start": "2:50 pm",
+    "end": "3:50 pm"
   },
   {
     "sessionId": "326838",
@@ -197,7 +254,10 @@
       "roomId": "28023",
       "roomName": "Kilimanjaro 2"
     },
-    "time": "Wed 2:50 pm - 3:50 pm"
+    "rawTime": "Wed 2:50 pm - 3:50 pm",
+    "day": "Wed",
+    "start": "2:50 pm",
+    "end": "3:50 pm"
   },
   {
     "sessionId": "333076",
@@ -207,7 +267,10 @@
       "roomId": "24448",
       "roomName": "Kilimanjaro 7"
     },
-    "time": "Wed 4:00 pm - 5:00 pm"
+    "rawTime": "Wed 4:00 pm - 5:00 pm",
+    "day": "Wed",
+    "start": "4:00 pm",
+    "end": "5:00 pm"
   },
   {
     "sessionId": "326637",
@@ -217,7 +280,10 @@
       "roomId": "24449",
       "roomName": "Kilimanjaro 8"
     },
-    "time": "Wed 4:00 pm - 5:00 pm"
+    "rawTime": "Wed 4:00 pm - 5:00 pm",
+    "day": "Wed",
+    "start": "4:00 pm",
+    "end": "5:00 pm"
   },
   {
     "sessionId": "333728",
@@ -227,7 +293,10 @@
       "roomId": "28022",
       "roomName": "Kilimanjaro 10"
     },
-    "time": "Wed 4:00 pm - 5:00 pm"
+    "rawTime": "Wed 4:00 pm - 5:00 pm",
+    "day": "Wed",
+    "start": "4:00 pm",
+    "end": "5:00 pm"
   },
   {
     "sessionId": "329371",
@@ -237,7 +306,10 @@
       "roomId": "24450",
       "roomName": "Kilimanjaro 9"
     },
-    "time": "Wed 4:00 pm - 5:00 pm"
+    "rawTime": "Wed 4:00 pm - 5:00 pm",
+    "day": "Wed",
+    "start": "4:00 pm",
+    "end": "5:00 pm"
   },
   {
     "sessionId": "335011",
@@ -247,7 +319,10 @@
       "roomId": "28023",
       "roomName": "Kilimanjaro 2"
     },
-    "time": "Wed 4:00 pm - 5:00 pm"
+    "rawTime": "Wed 4:00 pm - 5:00 pm",
+    "day": "Wed",
+    "start": "4:00 pm",
+    "end": "5:00 pm"
   },
   {
     "sessionId": "334678",
@@ -257,7 +332,10 @@
       "roomId": "24448",
       "roomName": "Kilimanjaro 7"
     },
-    "time": "Thu 10:20 am - 11:20 am"
+    "rawTime": "Thu 10:20 am - 11:20 am",
+    "day": "Thu",
+    "start": "10:20 am",
+    "end": "11:20 am"
   },
   {
     "sessionId": "334052",
@@ -267,7 +345,10 @@
       "roomId": "24449",
       "roomName": "Kilimanjaro 8"
     },
-    "time": "Thu 10:20 am - 11:20 am"
+    "rawTime": "Thu 10:20 am - 11:20 am",
+    "day": "Thu",
+    "start": "10:20 am",
+    "end": "11:20 am"
   },
   {
     "sessionId": "343192",
@@ -280,7 +361,10 @@
       "roomId": "28022",
       "roomName": "Kilimanjaro 10"
     },
-    "time": "Thu 10:20 am - 11:20 am"
+    "rawTime": "Thu 10:20 am - 11:20 am",
+    "day": "Thu",
+    "start": "10:20 am",
+    "end": "11:20 am"
   },
   {
     "sessionId": "327081",
@@ -290,7 +374,10 @@
       "roomId": "24450",
       "roomName": "Kilimanjaro 9"
     },
-    "time": "Thu 10:20 am - 11:20 am"
+    "rawTime": "Thu 10:20 am - 11:20 am",
+    "day": "Thu",
+    "start": "10:20 am",
+    "end": "11:20 am"
   },
   {
     "sessionId": "334222",
@@ -300,7 +387,10 @@
       "roomId": "28023",
       "roomName": "Kilimanjaro 2"
     },
-    "time": "Thu 10:20 am - 11:20 am"
+    "rawTime": "Thu 10:20 am - 11:20 am",
+    "day": "Thu",
+    "start": "10:20 am",
+    "end": "11:20 am"
   },
   {
     "sessionId": "327972",
@@ -310,7 +400,10 @@
       "roomId": "24448",
       "roomName": "Kilimanjaro 7"
     },
-    "time": "Thu 11:30 am - 12:30 pm"
+    "rawTime": "Thu 11:30 am - 12:30 pm",
+    "day": "Thu",
+    "start": "11:30 am",
+    "end": "12:30 pm"
   },
   {
     "sessionId": "386921",
@@ -320,7 +413,10 @@
       "roomId": "24449",
       "roomName": "Kilimanjaro 8"
     },
-    "time": "Thu 11:30 am - 12:30 pm"
+    "rawTime": "Thu 11:30 am - 12:30 pm",
+    "day": "Thu",
+    "start": "11:30 am",
+    "end": "12:30 pm"
   },
   {
     "sessionId": "333753",
@@ -330,7 +426,10 @@
       "roomId": "24450",
       "roomName": "Kilimanjaro 9"
     },
-    "time": "Thu 11:30 am - 12:30 pm"
+    "rawTime": "Thu 11:30 am - 12:30 pm",
+    "day": "Thu",
+    "start": "11:30 am",
+    "end": "12:30 pm"
   },
   {
     "sessionId": "334304",
@@ -340,7 +439,10 @@
       "roomId": "28022",
       "roomName": "Kilimanjaro 10"
     },
-    "time": "Thu 11:30 am - 12:30 pm"
+    "rawTime": "Thu 11:30 am - 12:30 pm",
+    "day": "Thu",
+    "start": "11:30 am",
+    "end": "12:30 pm"
   },
   {
     "sessionId": "332238",
@@ -350,7 +452,10 @@
       "roomId": "28023",
       "roomName": "Kilimanjaro 2"
     },
-    "time": "Thu 11:30 am - 12:30 pm"
+    "rawTime": "Thu 11:30 am - 12:30 pm",
+    "day": "Thu",
+    "start": "11:30 am",
+    "end": "12:30 pm"
   },
   {
     "sessionId": "332584",
@@ -360,7 +465,10 @@
       "roomId": "24448",
       "roomName": "Kilimanjaro 7"
     },
-    "time": "Thu 1:30 pm - 2:30 pm"
+    "rawTime": "Thu 1:30 pm - 2:30 pm",
+    "day": "Thu",
+    "start": "1:30 pm",
+    "end": "2:30 pm"
   },
   {
     "sessionId": "327364",
@@ -370,7 +478,10 @@
       "roomId": "24449",
       "roomName": "Kilimanjaro 8"
     },
-    "time": "Thu 1:30 pm - 2:30 pm"
+    "rawTime": "Thu 1:30 pm - 2:30 pm",
+    "day": "Thu",
+    "start": "1:30 pm",
+    "end": "2:30 pm"
   },
   {
     "sessionId": "335001",
@@ -380,7 +491,10 @@
       "roomId": "24450",
       "roomName": "Kilimanjaro 9"
     },
-    "time": "Thu 1:30 pm - 2:30 pm"
+    "rawTime": "Thu 1:30 pm - 2:30 pm",
+    "day": "Thu",
+    "start": "1:30 pm",
+    "end": "2:30 pm"
   },
   {
     "sessionId": "351945",
@@ -390,7 +504,10 @@
       "roomId": "28022",
       "roomName": "Kilimanjaro 10"
     },
-    "time": "Thu 1:30 pm - 2:30 pm"
+    "rawTime": "Thu 1:30 pm - 2:30 pm",
+    "day": "Thu",
+    "start": "1:30 pm",
+    "end": "2:30 pm"
   },
   {
     "sessionId": "328442",
@@ -400,7 +517,10 @@
       "roomId": "28023",
       "roomName": "Kilimanjaro 2"
     },
-    "time": "Thu 1:30 pm - 2:30 pm"
+    "rawTime": "Thu 1:30 pm - 2:30 pm",
+    "day": "Thu",
+    "start": "1:30 pm",
+    "end": "2:30 pm"
   },
   {
     "sessionId": "327641",
@@ -410,7 +530,10 @@
       "roomId": "24448",
       "roomName": "Kilimanjaro 7"
     },
-    "time": "Thu 2:50 pm - 3:50 pm"
+    "rawTime": "Thu 2:50 pm - 3:50 pm",
+    "day": "Thu",
+    "start": "2:50 pm",
+    "end": "3:50 pm"
   },
   {
     "sessionId": "334309",
@@ -420,7 +543,10 @@
       "roomId": "24449",
       "roomName": "Kilimanjaro 8"
     },
-    "time": "Thu 2:50 pm - 3:50 pm"
+    "rawTime": "Thu 2:50 pm - 3:50 pm",
+    "day": "Thu",
+    "start": "2:50 pm",
+    "end": "3:50 pm"
   },
   {
     "sessionId": "340692",
@@ -430,7 +556,10 @@
       "roomId": "28022",
       "roomName": "Kilimanjaro 10"
     },
-    "time": "Thu 2:50 pm - 3:50 pm"
+    "rawTime": "Thu 2:50 pm - 3:50 pm",
+    "day": "Thu",
+    "start": "2:50 pm",
+    "end": "3:50 pm"
   },
   {
     "sessionId": "331421",
@@ -440,7 +569,10 @@
       "roomId": "24450",
       "roomName": "Kilimanjaro 9"
     },
-    "time": "Thu 2:50 pm - 3:50 pm"
+    "rawTime": "Thu 2:50 pm - 3:50 pm",
+    "day": "Thu",
+    "start": "2:50 pm",
+    "end": "3:50 pm"
   },
   {
     "sessionId": "333890",
@@ -450,7 +582,10 @@
       "roomId": "28023",
       "roomName": "Kilimanjaro 2"
     },
-    "time": "Thu 2:50 pm - 3:50 pm"
+    "rawTime": "Thu 2:50 pm - 3:50 pm",
+    "day": "Thu",
+    "start": "2:50 pm",
+    "end": "3:50 pm"
   },
   {
     "sessionId": "334412",
@@ -460,7 +595,10 @@
       "roomId": "24448",
       "roomName": "Kilimanjaro 7"
     },
-    "time": "Thu 4:00 pm - 5:00 pm"
+    "rawTime": "Thu 4:00 pm - 5:00 pm",
+    "day": "Thu",
+    "start": "4:00 pm",
+    "end": "5:00 pm"
   },
   {
     "sessionId": "334418",
@@ -470,7 +608,10 @@
       "roomId": "24449",
       "roomName": "Kilimanjaro 8"
     },
-    "time": "Thu 4:00 pm - 5:00 pm"
+    "rawTime": "Thu 4:00 pm - 5:00 pm",
+    "day": "Thu",
+    "start": "4:00 pm",
+    "end": "5:00 pm"
   },
   {
     "sessionId": "327139",
@@ -480,7 +621,10 @@
       "roomId": "28022",
       "roomName": "Kilimanjaro 10"
     },
-    "time": "Thu 4:00 pm - 5:00 pm"
+    "rawTime": "Thu 4:00 pm - 5:00 pm",
+    "day": "Thu",
+    "start": "4:00 pm",
+    "end": "5:00 pm"
   },
   {
     "sessionId": "330681",
@@ -490,7 +634,10 @@
       "roomId": "24450",
       "roomName": "Kilimanjaro 9"
     },
-    "time": "Thu 4:00 pm - 5:00 pm"
+    "rawTime": "Thu 4:00 pm - 5:00 pm",
+    "day": "Thu",
+    "start": "4:00 pm",
+    "end": "5:00 pm"
   },
   {
     "sessionId": "333756",
@@ -500,7 +647,10 @@
       "roomId": "28023",
       "roomName": "Kilimanjaro 2"
     },
-    "time": "Thu 4:00 pm - 5:00 pm"
+    "rawTime": "Thu 4:00 pm - 5:00 pm",
+    "day": "Thu",
+    "start": "4:00 pm",
+    "end": "5:00 pm"
   },
   {
     "sessionId": "332236",
@@ -510,7 +660,10 @@
       "roomId": "24448",
       "roomName": "Kilimanjaro 7"
     },
-    "time": "Fri 9:00 am - 10:00 am"
+    "rawTime": "Fri 9:00 am - 10:00 am",
+    "day": "Fri",
+    "start": "9:00 am",
+    "end": "10:00 am"
   },
   {
     "sessionId": "333074",
@@ -520,7 +673,10 @@
       "roomId": "24449",
       "roomName": "Kilimanjaro 8"
     },
-    "time": "Fri 9:00 am - 10:00 am"
+    "rawTime": "Fri 9:00 am - 10:00 am",
+    "day": "Fri",
+    "start": "9:00 am",
+    "end": "10:00 am"
   },
   {
     "sessionId": "327384",
@@ -530,7 +686,10 @@
       "roomId": "24450",
       "roomName": "Kilimanjaro 9"
     },
-    "time": "Fri 9:00 am - 10:00 am"
+    "rawTime": "Fri 9:00 am - 10:00 am",
+    "day": "Fri",
+    "start": "9:00 am",
+    "end": "10:00 am"
   },
   {
     "sessionId": "339217",
@@ -540,7 +699,10 @@
       "roomId": "28022",
       "roomName": "Kilimanjaro 10"
     },
-    "time": "Fri 9:00 am - 10:00 am"
+    "rawTime": "Fri 9:00 am - 10:00 am",
+    "day": "Fri",
+    "start": "9:00 am",
+    "end": "10:00 am"
   },
   {
     "sessionId": "334995",
@@ -550,7 +712,10 @@
       "roomId": "28023",
       "roomName": "Kilimanjaro 2"
     },
-    "time": "Fri 9:00 am - 10:00 am"
+    "rawTime": "Fri 9:00 am - 10:00 am",
+    "day": "Fri",
+    "start": "9:00 am",
+    "end": "10:00 am"
   },
   {
     "sessionId": "395998",
@@ -560,7 +725,10 @@
       "roomId": "29851",
       "roomName": "Africa 30"
     },
-    "time": "Fri 9:00 am - 10:00 am"
+    "rawTime": "Fri 9:00 am - 10:00 am",
+    "day": "Fri",
+    "start": "9:00 am",
+    "end": "10:00 am"
   },
   {
     "sessionId": "333727",
@@ -570,7 +738,10 @@
       "roomId": "24448",
       "roomName": "Kilimanjaro 7"
     },
-    "time": "Fri 10:20 am - 11:20 am"
+    "rawTime": "Fri 10:20 am - 11:20 am",
+    "day": "Fri",
+    "start": "10:20 am",
+    "end": "11:20 am"
   },
   {
     "sessionId": "334219",
@@ -580,7 +751,10 @@
       "roomId": "24449",
       "roomName": "Kilimanjaro 8"
     },
-    "time": "Fri 10:20 am - 11:20 am"
+    "rawTime": "Fri 10:20 am - 11:20 am",
+    "day": "Fri",
+    "start": "10:20 am",
+    "end": "11:20 am"
   },
   {
     "sessionId": "331564",
@@ -590,7 +764,10 @@
       "roomId": "28022",
       "roomName": "Kilimanjaro 10"
     },
-    "time": "Fri 10:20 am - 11:20 am"
+    "rawTime": "Fri 10:20 am - 11:20 am",
+    "day": "Fri",
+    "start": "10:20 am",
+    "end": "11:20 am"
   },
   {
     "sessionId": "350356",
@@ -600,7 +777,10 @@
       "roomId": "24450",
       "roomName": "Kilimanjaro 9"
     },
-    "time": "Fri 10:20 am - 11:20 am"
+    "rawTime": "Fri 10:20 am - 11:20 am",
+    "day": "Fri",
+    "start": "10:20 am",
+    "end": "11:20 am"
   },
   {
     "sessionId": "395995",
@@ -610,7 +790,10 @@
       "roomId": "29851",
       "roomName": "Africa 30"
     },
-    "time": "Fri 10:20 am - 11:20 am"
+    "rawTime": "Fri 10:20 am - 11:20 am",
+    "day": "Fri",
+    "start": "10:20 am",
+    "end": "11:20 am"
   },
   {
     "sessionId": "389049",
@@ -620,7 +803,10 @@
       "roomId": "28023",
       "roomName": "Kilimanjaro 2"
     },
-    "time": "Fri 10:20 am - 11:20 am"
+    "rawTime": "Fri 10:20 am - 11:20 am",
+    "day": "Fri",
+    "start": "10:20 am",
+    "end": "11:20 am"
   },
   {
     "sessionId": "333751",
@@ -630,7 +816,10 @@
       "roomId": "24448",
       "roomName": "Kilimanjaro 7"
     },
-    "time": "Fri 11:30 am - 12:30 pm"
+    "rawTime": "Fri 11:30 am - 12:30 pm",
+    "day": "Fri",
+    "start": "11:30 am",
+    "end": "12:30 pm"
   },
   {
     "sessionId": "334121",
@@ -640,7 +829,10 @@
       "roomId": "24449",
       "roomName": "Kilimanjaro 8"
     },
-    "time": "Fri 11:30 am - 12:30 pm"
+    "rawTime": "Fri 11:30 am - 12:30 pm",
+    "day": "Fri",
+    "start": "11:30 am",
+    "end": "12:30 pm"
   },
   {
     "sessionId": "353508",
@@ -650,7 +842,10 @@
       "roomId": "28022",
       "roomName": "Kilimanjaro 10"
     },
-    "time": "Fri 11:30 am - 12:30 pm"
+    "rawTime": "Fri 11:30 am - 12:30 pm",
+    "day": "Fri",
+    "start": "11:30 am",
+    "end": "12:30 pm"
   },
   {
     "sessionId": "334851",
@@ -660,7 +855,10 @@
       "roomId": "24450",
       "roomName": "Kilimanjaro 9"
     },
-    "time": "Fri 11:30 am - 12:30 pm"
+    "rawTime": "Fri 11:30 am - 12:30 pm",
+    "day": "Fri",
+    "start": "11:30 am",
+    "end": "12:30 pm"
   },
   {
     "sessionId": "334258",
@@ -670,7 +868,10 @@
       "roomId": "28023",
       "roomName": "Kilimanjaro 2"
     },
-    "time": "Fri 11:30 am - 12:30 pm"
+    "rawTime": "Fri 11:30 am - 12:30 pm",
+    "day": "Fri",
+    "start": "11:30 am",
+    "end": "12:30 pm"
   },
   {
     "sessionId": "395994",
@@ -680,7 +881,10 @@
       "roomId": "29851",
       "roomName": "Africa 30"
     },
-    "time": "Fri 11:30 am - 12:30 pm"
+    "rawTime": "Fri 11:30 am - 12:30 pm",
+    "day": "Fri",
+    "start": "11:30 am",
+    "end": "12:30 pm"
   },
   {
     "sessionId": "334986",
@@ -690,7 +894,10 @@
       "roomId": "24448",
       "roomName": "Kilimanjaro 7"
     },
-    "time": "Fri 1:30 pm - 2:30 pm"
+    "rawTime": "Fri 1:30 pm - 2:30 pm",
+    "day": "Fri",
+    "start": "1:30 pm",
+    "end": "2:30 pm"
   },
   {
     "sessionId": "327140",
@@ -700,7 +907,10 @@
       "roomId": "24449",
       "roomName": "Kilimanjaro 8"
     },
-    "time": "Fri 1:30 pm - 2:30 pm"
+    "rawTime": "Fri 1:30 pm - 2:30 pm",
+    "day": "Fri",
+    "start": "1:30 pm",
+    "end": "2:30 pm"
   },
   {
     "sessionId": "334142",
@@ -710,7 +920,10 @@
       "roomId": "24450",
       "roomName": "Kilimanjaro 9"
     },
-    "time": "Fri 1:30 pm - 2:30 pm"
+    "rawTime": "Fri 1:30 pm - 2:30 pm",
+    "day": "Fri",
+    "start": "1:30 pm",
+    "end": "2:30 pm"
   },
   {
     "sessionId": "334860",
@@ -720,7 +933,10 @@
       "roomId": "28022",
       "roomName": "Kilimanjaro 10"
     },
-    "time": "Fri 1:30 pm - 2:30 pm"
+    "rawTime": "Fri 1:30 pm - 2:30 pm",
+    "day": "Fri",
+    "start": "1:30 pm",
+    "end": "2:30 pm"
   },
   {
     "sessionId": "327082",
@@ -730,7 +946,10 @@
       "roomId": "28023",
       "roomName": "Kilimanjaro 2"
     },
-    "time": "Fri 1:30 pm - 2:30 pm"
+    "rawTime": "Fri 1:30 pm - 2:30 pm",
+    "day": "Fri",
+    "start": "1:30 pm",
+    "end": "2:30 pm"
   },
   {
     "sessionId": "340690",
@@ -740,7 +959,10 @@
       "roomId": "24448",
       "roomName": "Kilimanjaro 7"
     },
-    "time": "Fri 2:50 pm - 3:50 pm"
+    "rawTime": "Fri 2:50 pm - 3:50 pm",
+    "day": "Fri",
+    "start": "2:50 pm",
+    "end": "3:50 pm"
   },
   {
     "sessionId": "332585",
@@ -750,7 +972,10 @@
       "roomId": "24449",
       "roomName": "Kilimanjaro 8"
     },
-    "time": "Fri 2:50 pm - 3:50 pm"
+    "rawTime": "Fri 2:50 pm - 3:50 pm",
+    "day": "Fri",
+    "start": "2:50 pm",
+    "end": "3:50 pm"
   },
   {
     "sessionId": "334865",
@@ -760,7 +985,10 @@
       "roomId": "24450",
       "roomName": "Kilimanjaro 9"
     },
-    "time": "Fri 2:50 pm - 3:50 pm"
+    "rawTime": "Fri 2:50 pm - 3:50 pm",
+    "day": "Fri",
+    "start": "2:50 pm",
+    "end": "3:50 pm"
   },
   {
     "sessionId": "353512",
@@ -770,6 +998,9 @@
       "roomId": "28023",
       "roomName": "Kilimanjaro 2"
     },
-    "time": "Fri 2:50 pm - 3:50 pm"
+    "rawTime": "Fri 2:50 pm - 3:50 pm",
+    "day": "Fri",
+    "start": "2:50 pm",
+    "end": "3:50 pm"
   }
 ]
