@@ -4,8 +4,8 @@
     "title": "Application Architecture Patterns",
     "speaker": "Joseph Guadagno",
     "room": {
-      "roomName": "Suite 7",
-      "roomId": "24448"
+      "roomId": "24448",
+      "roomName": "Kilimanjaro 7"
     },
     "rawTime": "Wed 10:20 am - 11:20 am",
     "day": "Wed",
@@ -17,8 +17,8 @@
     "title": "Snorkeling in MAUI",
     "speaker": "Sam Basu",
     "room": {
-      "roomName": "Suite 8",
-      "roomId": "24449"
+      "roomId": "24449",
+      "roomName": "Kilimanjaro 8"
     },
     "rawTime": "Wed 10:20 am - 11:20 am",
     "day": "Wed",
@@ -30,8 +30,8 @@
     "title": "Building in the Cloud with Bicep",
     "speaker": "Chris Ayers",
     "room": {
-      "roomName": "Suite 9",
-      "roomId": "24450"
+      "roomId": "24450",
+      "roomName": "Kilimanjaro 9"
     },
     "rawTime": "Wed 10:20 am - 11:20 am",
     "day": "Wed",
@@ -43,8 +43,8 @@
     "title": "Continuous Performance via Query Store",
     "speaker": "Chris Houdeshell",
     "room": {
-      "roomName": "Suite 10",
-      "roomId": "28022"
+      "roomId": "28022",
+      "roomName": "Kilimanjaro 10"
     },
     "rawTime": "Wed 10:20 am - 11:20 am",
     "day": "Wed",
@@ -56,8 +56,8 @@
     "title": "How To Get Started with gRPC",
     "speaker": "Tim Corey",
     "room": {
-      "roomName": "Kilimanjaro Ballroom",
-      "roomId": "28023"
+      "roomId": "28023",
+      "roomName": "Kilimanjaro 2"
     },
     "rawTime": "Wed 10:20 am - 11:20 am",
     "day": "Wed",
@@ -69,8 +69,8 @@
     "title": "Real-Time Revolution: SignalR in Action",
     "speaker": "Kevin Griffin",
     "room": {
-      "roomName": "Suite 7",
-      "roomId": "24448"
+      "roomId": "24448",
+      "roomName": "Kilimanjaro 7"
     },
     "rawTime": "Wed 11:30 am - 12:30 pm",
     "day": "Wed",
@@ -79,11 +79,11 @@
   },
   {
     "sessionId": "334051",
-    "title": "Don’t Build a Distributed Monolith: How to Avoid Doing Microservices\n                    Completely Wrong",
+    "title": "Don’t Build a Distributed Monolith: How to Avoid Doing Microservices Completely Wrong",
     "speaker": "Jonathan \"J.\" Tower",
     "room": {
-      "roomName": "Suite 8",
-      "roomId": "24449"
+      "roomId": "24449",
+      "roomName": "Kilimanjaro 8"
     },
     "rawTime": "Wed 11:30 am - 12:30 pm",
     "day": "Wed",
@@ -95,8 +95,8 @@
     "title": "Animating your way into Jetpack Compose",
     "speaker": "Aida Issayeva",
     "room": {
-      "roomName": "Suite 9",
-      "roomId": "24450"
+      "roomId": "24450",
+      "roomName": "Kilimanjaro 9"
     },
     "rawTime": "Wed 11:30 am - 12:30 pm",
     "day": "Wed",
@@ -105,11 +105,11 @@
   },
   {
     "sessionId": "333597",
-    "title": "I For One Welcome Our Robot Overlords: How To Build Trust In Test\n                    Automation",
+    "title": "I For One Welcome Our Robot Overlords: How To Build Trust In Test Automation",
     "speaker": "Maciej Konkolowicz",
     "room": {
-      "roomName": "Suite 10",
-      "roomId": "28022"
+      "roomId": "28022",
+      "roomName": "Kilimanjaro 10"
     },
     "rawTime": "Wed 11:30 am - 12:30 pm",
     "day": "Wed",
@@ -121,8 +121,8 @@
     "title": "Introduction to Python for .Net Developers",
     "speaker": "Mike Rapa",
     "room": {
-      "roomName": "Kilimanjaro Ballroom",
-      "roomId": "28023"
+      "roomId": "28023",
+      "roomName": "Kilimanjaro 2"
     },
     "rawTime": "Wed 11:30 am - 12:30 pm",
     "day": "Wed",
@@ -134,8 +134,8 @@
     "title": "Event Sourcing architecture, serverless and e-commerce",
     "speaker": "Santosh Hari",
     "room": {
-      "roomName": "Suite 7",
-      "roomId": "24448"
+      "roomId": "24448",
+      "roomName": "Kilimanjaro 7"
     },
     "rawTime": "Wed 1:30 pm - 2:30 pm",
     "day": "Wed",
@@ -147,8 +147,8 @@
     "title": "Visual Studio 2022 Productivity Tips and Tricks",
     "speaker": "Brian Jablonsky",
     "room": {
-      "roomName": "Suite 8",
-      "roomId": "24449"
+      "roomId": "24449",
+      "roomName": "Kilimanjaro 8"
     },
     "rawTime": "Wed 1:30 pm - 2:30 pm",
     "day": "Wed",
@@ -160,8 +160,8 @@
     "title": "Goodbye Passwords, Hello Passkeys!",
     "speaker": "Nick Hodges",
     "room": {
-      "roomName": "Suite 10",
-      "roomId": "28022"
+      "roomId": "28022",
+      "roomName": "Kilimanjaro 10"
     },
     "rawTime": "Wed 1:30 pm - 2:30 pm",
     "day": "Wed",
@@ -173,8 +173,8 @@
     "title": "Hack Your Editor: Building your first Visual Studio Code extension",
     "speaker": "Matt Reibach",
     "room": {
-      "roomName": "Suite 9",
-      "roomId": "24450"
+      "roomId": "24450",
+      "roomName": "Kilimanjaro 9"
     },
     "rawTime": "Wed 1:30 pm - 2:30 pm",
     "day": "Wed",
@@ -186,8 +186,8 @@
     "title": "I'll Get Back to You: Task, Await, and Asynchronous Methods in C#",
     "speaker": "Jeremy Clark",
     "room": {
-      "roomName": "Kilimanjaro Ballroom",
-      "roomId": "28023"
+      "roomId": "28023",
+      "roomName": "Kilimanjaro 2"
     },
     "rawTime": "Wed 1:30 pm - 2:30 pm",
     "day": "Wed",
@@ -199,8 +199,8 @@
     "title": "Lessons learned: how to leverage your \"non-technical\" experience",
     "speaker": "Nicole Tibaldi",
     "room": {
-      "roomName": "Suite 7",
-      "roomId": "24448"
+      "roomId": "24448",
+      "roomName": "Kilimanjaro 7"
     },
     "rawTime": "Wed 2:50 pm - 3:50 pm",
     "day": "Wed",
@@ -212,8 +212,8 @@
     "title": "Rethinking Architecture: A Look at Macroservices",
     "speaker": "Chris Gardner",
     "room": {
-      "roomName": "Suite 8",
-      "roomId": "24449"
+      "roomId": "24449",
+      "roomName": "Kilimanjaro 8"
     },
     "rawTime": "Wed 2:50 pm - 3:50 pm",
     "day": "Wed",
@@ -225,8 +225,8 @@
     "title": "Practical Guide To Go",
     "speaker": "Scott Kay",
     "room": {
-      "roomName": "Suite 10",
-      "roomId": "28022"
+      "roomId": "28022",
+      "roomName": "Kilimanjaro 10"
     },
     "rawTime": "Wed 2:50 pm - 3:50 pm",
     "day": "Wed",
@@ -238,8 +238,8 @@
     "title": "Stand Back; I'm going to try Data Science!",
     "speaker": "Matt Eland",
     "room": {
-      "roomName": "Suite 9",
-      "roomId": "24450"
+      "roomId": "24450",
+      "roomName": "Kilimanjaro 9"
     },
     "rawTime": "Wed 2:50 pm - 3:50 pm",
     "day": "Wed",
@@ -251,8 +251,8 @@
     "title": "Artificial Intelligence & Race: Does AI have issues with racial bias?",
     "speaker": "Crux Conception, M. Psych",
     "room": {
-      "roomName": "Kilimanjaro Ballroom",
-      "roomId": "28023"
+      "roomId": "28023",
+      "roomName": "Kilimanjaro 2"
     },
     "rawTime": "Wed 2:50 pm - 3:50 pm",
     "day": "Wed",
@@ -261,11 +261,11 @@
   },
   {
     "sessionId": "333076",
-    "title": "Fake it 'til you make it: A many faceted journey through impostor\n                    syndrome",
+    "title": "Fake it 'til you make it: A many faceted journey through impostor syndrome",
     "speaker": "Alice Brosey",
     "room": {
-      "roomName": "Suite 7",
-      "roomId": "24448"
+      "roomId": "24448",
+      "roomName": "Kilimanjaro 7"
     },
     "rawTime": "Wed 4:00 pm - 5:00 pm",
     "day": "Wed",
@@ -277,8 +277,8 @@
     "title": "Feature Flags - The Art of the IF and Deployment",
     "speaker": "Chris Ayers",
     "room": {
-      "roomName": "Suite 8",
-      "roomId": "24449"
+      "roomId": "24449",
+      "roomName": "Kilimanjaro 8"
     },
     "rawTime": "Wed 4:00 pm - 5:00 pm",
     "day": "Wed",
@@ -290,8 +290,8 @@
     "title": "Level Up Azure DevOps Pipelines with YAML",
     "speaker": "Matthew Burleigh",
     "room": {
-      "roomName": "Suite 10",
-      "roomId": "28022"
+      "roomId": "28022",
+      "roomName": "Kilimanjaro 10"
     },
     "rawTime": "Wed 4:00 pm - 5:00 pm",
     "day": "Wed",
@@ -303,8 +303,8 @@
     "title": "Unlock the power of your browser's development tools",
     "speaker": "Mike Rapa",
     "room": {
-      "roomName": "Suite 9",
-      "roomId": "24450"
+      "roomId": "24450",
+      "roomName": "Kilimanjaro 9"
     },
     "rawTime": "Wed 4:00 pm - 5:00 pm",
     "day": "Wed",
@@ -316,8 +316,8 @@
     "title": "Mobile & Desktop Apps with Blazor!",
     "speaker": "Sam Basu",
     "room": {
-      "roomName": "Kilimanjaro Ballroom",
-      "roomId": "28023"
+      "roomId": "28023",
+      "roomName": "Kilimanjaro 2"
     },
     "rawTime": "Wed 4:00 pm - 5:00 pm",
     "day": "Wed",
@@ -329,8 +329,8 @@
     "title": "CI/CD with Github Actions",
     "speaker": "Chris Ayers",
     "room": {
-      "roomName": "Suite 7",
-      "roomId": "24448"
+      "roomId": "24448",
+      "roomName": "Kilimanjaro 7"
     },
     "rawTime": "Thu 10:20 am - 11:20 am",
     "day": "Thu",
@@ -342,8 +342,8 @@
     "title": "Adding Redis Caching to Your .NET Web API",
     "speaker": "Jonathan \"J.\" Tower",
     "room": {
-      "roomName": "Suite 8",
-      "roomId": "24449"
+      "roomId": "24449",
+      "roomName": "Kilimanjaro 8"
     },
     "rawTime": "Thu 10:20 am - 11:20 am",
     "day": "Thu",
@@ -354,25 +354,12 @@
     "sessionId": "343192",
     "title": "AWS Cookbook",
     "speaker": [
-      "John                            Culkin",
-      "Mike                            Zazon"
+      "John Culkin",
+      "Mike Zazon"
     ],
     "room": {
-      "roomName": "Suite 10",
-      "roomId": "28022"
-    },
-    "rawTime": "Thu 10:20 am - 11:20 am",
-    "day": "Thu",
-    "start": "10:20 am",
-    "end": "11:20 am"
-  },
-  {
-    "sessionId": "327081",
-    "title": "Stranger Danger: Your JavaScript Attack Surface Just Got Bigger",
-    "speaker": "Micah Silverman",
-    "room": {
-      "roomName": "Suite 9",
-      "roomId": "24450"
+      "roomId": "28022",
+      "roomName": "Kilimanjaro 10"
     },
     "rawTime": "Thu 10:20 am - 11:20 am",
     "day": "Thu",
@@ -384,8 +371,8 @@
     "title": "Understanding Probabilistic Data Structures with 112,092 UFO Sightings",
     "speaker": "Guy Royse",
     "room": {
-      "roomName": "Kilimanjaro Ballroom",
-      "roomId": "28023"
+      "roomId": "28023",
+      "roomName": "Kilimanjaro 2"
     },
     "rawTime": "Thu 10:20 am - 11:20 am",
     "day": "Thu",
@@ -397,8 +384,8 @@
     "title": "Representing and Accessing Data That Changes Over Time",
     "speaker": "Lydia Cupery",
     "room": {
-      "roomName": "Suite 7",
-      "roomId": "24448"
+      "roomId": "24448",
+      "roomName": "Kilimanjaro 7"
     },
     "rawTime": "Thu 11:30 am - 12:30 pm",
     "day": "Thu",
@@ -410,8 +397,8 @@
     "title": "Authenticate your .NET MAUI app with Azure AD!",
     "speaker": "Johnson Monohar M",
     "room": {
-      "roomName": "Suite 8",
-      "roomId": "24449"
+      "roomId": "24449",
+      "roomName": "Kilimanjaro 8"
     },
     "rawTime": "Thu 11:30 am - 12:30 pm",
     "day": "Thu",
@@ -423,8 +410,8 @@
     "title": "Build voice-enabled apps with the Speech Services",
     "speaker": "Veronika Kolesnikova",
     "room": {
-      "roomName": "Suite 9",
-      "roomId": "24450"
+      "roomId": "24450",
+      "roomName": "Kilimanjaro 9"
     },
     "rawTime": "Thu 11:30 am - 12:30 pm",
     "day": "Thu",
@@ -436,8 +423,8 @@
     "title": "Building Microservice REST APIs Using Azure Functions",
     "speaker": "Chad Green",
     "room": {
-      "roomName": "Suite 10",
-      "roomId": "28022"
+      "roomId": "28022",
+      "roomName": "Kilimanjaro 10"
     },
     "rawTime": "Thu 11:30 am - 12:30 pm",
     "day": "Thu",
@@ -449,8 +436,8 @@
     "title": "Having a Whale Of a Good Time With Docker",
     "speaker": "Cameron Presley",
     "room": {
-      "roomName": "Kilimanjaro Ballroom",
-      "roomId": "28023"
+      "roomId": "28023",
+      "roomName": "Kilimanjaro 2"
     },
     "rawTime": "Thu 11:30 am - 12:30 pm",
     "day": "Thu",
@@ -462,8 +449,8 @@
     "title": "Carbon Footprint Aware Software Development",
     "speaker": "Tejas Chopra",
     "room": {
-      "roomName": "Suite 7",
-      "roomId": "24448"
+      "roomId": "24448",
+      "roomName": "Kilimanjaro 7"
     },
     "rawTime": "Thu 1:30 pm - 2:30 pm",
     "day": "Thu",
@@ -475,8 +462,8 @@
     "title": "Is Die Hard a Christmas Movie? Let's ask Azure!",
     "speaker": "Matt Eland",
     "room": {
-      "roomName": "Suite 8",
-      "roomId": "24449"
+      "roomId": "24449",
+      "roomName": "Kilimanjaro 8"
     },
     "rawTime": "Thu 1:30 pm - 2:30 pm",
     "day": "Thu",
@@ -485,11 +472,11 @@
   },
   {
     "sessionId": "335001",
-    "title": "Modern Authentication and Authorization with OIDC, OAuth2, and\n                    Resource-based Permissions",
+    "title": "Modern Authentication and Authorization with OIDC, OAuth2, and Resource-based Permissions",
     "speaker": "Eric Boyd",
     "room": {
-      "roomName": "Suite 9",
-      "roomId": "24450"
+      "roomId": "24450",
+      "roomName": "Kilimanjaro 9"
     },
     "rawTime": "Thu 1:30 pm - 2:30 pm",
     "day": "Thu",
@@ -501,8 +488,8 @@
     "title": "Scaling WordPress with Next.js",
     "speaker": "Colby Fayock",
     "room": {
-      "roomName": "Suite 10",
-      "roomId": "28022"
+      "roomId": "28022",
+      "roomName": "Kilimanjaro 10"
     },
     "rawTime": "Thu 1:30 pm - 2:30 pm",
     "day": "Thu",
@@ -514,8 +501,8 @@
     "title": "Pixel-Perfect Multi-Platform Applications with C# and WinUI",
     "speaker": "Steve Bilogan",
     "room": {
-      "roomName": "Kilimanjaro Ballroom",
-      "roomId": "28023"
+      "roomId": "28023",
+      "roomName": "Kilimanjaro 2"
     },
     "rawTime": "Thu 1:30 pm - 2:30 pm",
     "day": "Thu",
@@ -527,8 +514,8 @@
     "title": "Getting up to speed: onboarding strategies for successful teams",
     "speaker": "Nicole Tibaldi",
     "room": {
-      "roomName": "Suite 7",
-      "roomId": "24448"
+      "roomId": "24448",
+      "roomName": "Kilimanjaro 7"
     },
     "rawTime": "Thu 2:50 pm - 3:50 pm",
     "day": "Thu",
@@ -540,8 +527,8 @@
     "title": "Ch-ch-ch-changes: Tracing Changes in Azure Cosmos DB",
     "speaker": "Chad Green",
     "room": {
-      "roomName": "Suite 8",
-      "roomId": "24449"
+      "roomId": "24449",
+      "roomName": "Kilimanjaro 8"
     },
     "rawTime": "Thu 2:50 pm - 3:50 pm",
     "day": "Thu",
@@ -553,8 +540,8 @@
     "title": "From Repo to Cloud - GitHub and your Azure journey",
     "speaker": "Esteban Garcia",
     "room": {
-      "roomName": "Suite 10",
-      "roomId": "28022"
+      "roomId": "28022",
+      "roomName": "Kilimanjaro 10"
     },
     "rawTime": "Thu 2:50 pm - 3:50 pm",
     "day": "Thu",
@@ -566,8 +553,8 @@
     "title": "Saving Lives with SignalR and .NET",
     "speaker": "Kevin Griffin",
     "room": {
-      "roomName": "Suite 9",
-      "roomId": "24450"
+      "roomId": "24450",
+      "roomName": "Kilimanjaro 9"
     },
     "rawTime": "Thu 2:50 pm - 3:50 pm",
     "day": "Thu",
@@ -579,8 +566,8 @@
     "title": "Understanding Alexa",
     "speaker": "Jeff Blankenburg",
     "room": {
-      "roomName": "Kilimanjaro Ballroom",
-      "roomId": "28023"
+      "roomId": "28023",
+      "roomName": "Kilimanjaro 2"
     },
     "rawTime": "Thu 2:50 pm - 3:50 pm",
     "day": "Thu",
@@ -592,8 +579,8 @@
     "title": "VSCode for C# Developers",
     "speaker": "Tim Corey",
     "room": {
-      "roomName": "Suite 7",
-      "roomId": "24448"
+      "roomId": "24448",
+      "roomName": "Kilimanjaro 7"
     },
     "rawTime": "Thu 4:00 pm - 5:00 pm",
     "day": "Thu",
@@ -605,8 +592,8 @@
     "title": "A primer on NoSQL databases for developers",
     "speaker": "Santosh Hari",
     "room": {
-      "roomName": "Suite 8",
-      "roomId": "24449"
+      "roomId": "24449",
+      "roomName": "Kilimanjaro 8"
     },
     "rawTime": "Thu 4:00 pm - 5:00 pm",
     "day": "Thu",
@@ -618,8 +605,8 @@
     "title": "An Introduction to Terraform",
     "speaker": "Jason Farrell",
     "room": {
-      "roomName": "Suite 10",
-      "roomId": "28022"
+      "roomId": "28022",
+      "roomName": "Kilimanjaro 10"
     },
     "rawTime": "Thu 4:00 pm - 5:00 pm",
     "day": "Thu",
@@ -631,8 +618,8 @@
     "title": "What does Recomposition mean to your app?",
     "speaker": "Aida Issayeva",
     "room": {
-      "roomName": "Suite 9",
-      "roomId": "24450"
+      "roomId": "24450",
+      "roomName": "Kilimanjaro 9"
     },
     "rawTime": "Thu 4:00 pm - 5:00 pm",
     "day": "Thu",
@@ -644,8 +631,8 @@
     "title": "Is there ML.NET in MAUI?",
     "speaker": "Veronika Kolesnikova",
     "room": {
-      "roomName": "Kilimanjaro Ballroom",
-      "roomId": "28023"
+      "roomId": "28023",
+      "roomName": "Kilimanjaro 2"
     },
     "rawTime": "Thu 4:00 pm - 5:00 pm",
     "day": "Thu",
@@ -657,8 +644,8 @@
     "title": "Learning Functional Programming Through Construction: First Principles",
     "speaker": "Cameron Presley",
     "room": {
-      "roomName": "Suite 7",
-      "roomId": "24448"
+      "roomId": "24448",
+      "roomName": "Kilimanjaro 7"
     },
     "rawTime": "Fri 9:00 am - 10:00 am",
     "day": "Fri",
@@ -670,8 +657,8 @@
     "title": "How to Make Git Your Best Friend",
     "speaker": "Alice Brosey",
     "room": {
-      "roomName": "Suite 8",
-      "roomId": "24449"
+      "roomId": "24449",
+      "roomName": "Kilimanjaro 8"
     },
     "rawTime": "Fri 9:00 am - 10:00 am",
     "day": "Fri",
@@ -683,8 +670,8 @@
     "title": "Kill All Mutants! (Intro to Mutation Testing)",
     "speaker": "Dave Aronson",
     "room": {
-      "roomName": "Suite 9",
-      "roomId": "24450"
+      "roomId": "24450",
+      "roomName": "Kilimanjaro 9"
     },
     "rawTime": "Fri 9:00 am - 10:00 am",
     "day": "Fri",
@@ -696,8 +683,8 @@
     "title": "Why Developers should love PowerShell",
     "speaker": "Kurt Kroeker",
     "room": {
-      "roomName": "Suite 10",
-      "roomId": "28022"
+      "roomId": "28022",
+      "roomName": "Kilimanjaro 10"
     },
     "rawTime": "Fri 9:00 am - 10:00 am",
     "day": "Fri",
@@ -709,8 +696,8 @@
     "title": "Architecting and Developing Microservices Apps",
     "speaker": "Eric Boyd",
     "room": {
-      "roomName": "Kilimanjaro Ballroom",
-      "roomId": "28023"
+      "roomId": "28023",
+      "roomName": "Kilimanjaro 2"
     },
     "rawTime": "Fri 9:00 am - 10:00 am",
     "day": "Fri",
@@ -722,8 +709,8 @@
     "title": "Take a Break! Martial Arts / Board Breaking",
     "speaker": "Joe Kuemerle",
     "room": {
-      "roomName": "Family Day",
-      "roomId": "29851"
+      "roomId": "29851",
+      "roomName": "Africa 30"
     },
     "rawTime": "Fri 9:00 am - 10:00 am",
     "day": "Fri",
@@ -735,8 +722,8 @@
     "title": "VS Code All the Things!!!",
     "speaker": "Matthew Burleigh",
     "room": {
-      "roomName": "Suite 7",
-      "roomId": "24448"
+      "roomId": "24448",
+      "roomName": "Kilimanjaro 7"
     },
     "rawTime": "Fri 10:20 am - 11:20 am",
     "day": "Fri",
@@ -745,11 +732,11 @@
   },
   {
     "sessionId": "334219",
-    "title": "Signals, Signals, Everywhere: Tracking Aircraft with Redis &\n                    Software-Defined Radio",
+    "title": "Signals, Signals, Everywhere: Tracking Aircraft with Redis & Software-Defined Radio",
     "speaker": "Guy Royse",
     "room": {
-      "roomName": "Suite 8",
-      "roomId": "24449"
+      "roomId": "24449",
+      "roomName": "Kilimanjaro 8"
     },
     "rawTime": "Fri 10:20 am - 11:20 am",
     "day": "Fri",
@@ -761,8 +748,8 @@
     "title": "Everything New In C# 11",
     "speaker": "Scott Kay",
     "room": {
-      "roomName": "Suite 10",
-      "roomId": "28022"
+      "roomId": "28022",
+      "roomName": "Kilimanjaro 10"
     },
     "rawTime": "Fri 10:20 am - 11:20 am",
     "day": "Fri",
@@ -774,8 +761,8 @@
     "title": "How I build a ZX Spectrum emulator from scratch using C# and Blazor",
     "speaker": "Jimmy Engström",
     "room": {
-      "roomName": "Suite 9",
-      "roomId": "24450"
+      "roomId": "24450",
+      "roomName": "Kilimanjaro 9"
     },
     "rawTime": "Fri 10:20 am - 11:20 am",
     "day": "Fri",
@@ -787,8 +774,8 @@
     "title": "Lutron Smart Home Devices",
     "speaker": "Anna Bateman",
     "room": {
-      "roomName": "Family Day",
-      "roomId": "29851"
+      "roomId": "29851",
+      "roomName": "Africa 30"
     },
     "rawTime": "Fri 10:20 am - 11:20 am",
     "day": "Fri",
@@ -800,8 +787,8 @@
     "title": "Security as Code: A DevSecOps Approach",
     "speaker": "Nancy Gariché",
     "room": {
-      "roomName": "Kilimanjaro Ballroom",
-      "roomId": "28023"
+      "roomId": "28023",
+      "roomName": "Kilimanjaro 2"
     },
     "rawTime": "Fri 10:20 am - 11:20 am",
     "day": "Fri",
@@ -813,8 +800,8 @@
     "title": "Building a Static Web App With Blazor and Azure",
     "speaker": "Brian Jablonsky",
     "room": {
-      "roomName": "Suite 7",
-      "roomId": "24448"
+      "roomId": "24448",
+      "roomName": "Kilimanjaro 7"
     },
     "rawTime": "Fri 11:30 am - 12:30 pm",
     "day": "Fri",
@@ -826,8 +813,8 @@
     "title": "Demystifying DevContainers and Codespaces",
     "speaker": "Ken Muse",
     "room": {
-      "roomName": "Suite 8",
-      "roomId": "24449"
+      "roomId": "24449",
+      "roomName": "Kilimanjaro 8"
     },
     "rawTime": "Fri 11:30 am - 12:30 pm",
     "day": "Fri",
@@ -839,8 +826,8 @@
     "title": "Intro to Progressive Web Apps",
     "speaker": "Chris Lorenzo",
     "room": {
-      "roomName": "Suite 10",
-      "roomId": "28022"
+      "roomId": "28022",
+      "roomName": "Kilimanjaro 10"
     },
     "rawTime": "Fri 11:30 am - 12:30 pm",
     "day": "Fri",
@@ -852,8 +839,8 @@
     "title": "Running Blazor in production, lessons learned",
     "speaker": "Jimmy Engström",
     "room": {
-      "roomName": "Suite 9",
-      "roomId": "24450"
+      "roomId": "24450",
+      "roomName": "Kilimanjaro 9"
     },
     "rawTime": "Fri 11:30 am - 12:30 pm",
     "day": "Fri",
@@ -865,8 +852,8 @@
     "title": "Get Func-y: Understanding Delegates in C#",
     "speaker": "Jeremy Clark",
     "room": {
-      "roomName": "Kilimanjaro Ballroom",
-      "roomId": "28023"
+      "roomId": "28023",
+      "roomName": "Kilimanjaro 2"
     },
     "rawTime": "Fri 11:30 am - 12:30 pm",
     "day": "Fri",
@@ -878,8 +865,8 @@
     "title": "Machine Learning with Teachable Machine",
     "speaker": "Anna Bateman",
     "room": {
-      "roomName": "Family Day",
-      "roomId": "29851"
+      "roomId": "29851",
+      "roomName": "Africa 30"
     },
     "rawTime": "Fri 11:30 am - 12:30 pm",
     "day": "Fri",
@@ -891,8 +878,8 @@
     "title": "Introduction to Game Design",
     "speaker": "Chris Gardner",
     "room": {
-      "roomName": "Suite 7",
-      "roomId": "24448"
+      "roomId": "24448",
+      "roomName": "Kilimanjaro 7"
     },
     "rawTime": "Fri 1:30 pm - 2:30 pm",
     "day": "Fri",
@@ -904,8 +891,8 @@
     "title": "An Introduction to Kubernetes",
     "speaker": "Jason Farrell",
     "room": {
-      "roomName": "Suite 8",
-      "roomId": "24449"
+      "roomId": "24449",
+      "roomName": "Kilimanjaro 8"
     },
     "rawTime": "Fri 1:30 pm - 2:30 pm",
     "day": "Fri",
@@ -917,8 +904,8 @@
     "title": "Cosmos DB For SQL Server Developers",
     "speaker": "Ken Muse",
     "room": {
-      "roomName": "Suite 9",
-      "roomId": "24450"
+      "roomId": "24450",
+      "roomName": "Kilimanjaro 9"
     },
     "rawTime": "Fri 1:30 pm - 2:30 pm",
     "day": "Fri",
@@ -930,8 +917,8 @@
     "title": "Practical tips to elevate your UX and accessibility",
     "speaker": "Jessica Engström",
     "room": {
-      "roomName": "Suite 10",
-      "roomId": "28022"
+      "roomId": "28022",
+      "roomName": "Kilimanjaro 10"
     },
     "rawTime": "Fri 1:30 pm - 2:30 pm",
     "day": "Fri",
@@ -943,8 +930,8 @@
     "title": "Log4Shell: A Deep Dive Into the Exploit that Rocked the World",
     "speaker": "Micah Silverman",
     "room": {
-      "roomName": "Kilimanjaro Ballroom",
-      "roomId": "28023"
+      "roomId": "28023",
+      "roomName": "Kilimanjaro 2"
     },
     "rawTime": "Fri 1:30 pm - 2:30 pm",
     "day": "Fri",
@@ -956,8 +943,8 @@
     "title": "Developer-First Security: GitHub security features",
     "speaker": "Esteban Garcia",
     "room": {
-      "roomName": "Suite 7",
-      "roomId": "24448"
+      "roomId": "24448",
+      "roomName": "Kilimanjaro 7"
     },
     "rawTime": "Fri 2:50 pm - 3:50 pm",
     "day": "Fri",
@@ -969,8 +956,8 @@
     "title": "Demystifying Privacy Preserving Computing",
     "speaker": "Tejas Chopra",
     "room": {
-      "roomName": "Suite 8",
-      "roomId": "24449"
+      "roomId": "24449",
+      "roomName": "Kilimanjaro 8"
     },
     "rawTime": "Fri 2:50 pm - 3:50 pm",
     "day": "Fri",
@@ -982,21 +969,8 @@
     "title": "How to Mock objects and influence unit tests",
     "speaker": "Duane Newman",
     "room": {
-      "roomName": "Suite 9",
-      "roomId": "24450"
-    },
-    "rawTime": "Fri 2:50 pm - 3:50 pm",
-    "day": "Fri",
-    "start": "2:50 pm",
-    "end": "3:50 pm"
-  },
-  {
-    "sessionId": "326976",
-    "title": "Your AWS Infrastructure IS CODE with CDK",
-    "speaker": "Ulili Nhaga",
-    "room": {
-      "roomName": "Suite 10",
-      "roomId": "28022"
+      "roomId": "24450",
+      "roomName": "Kilimanjaro 9"
     },
     "rawTime": "Fri 2:50 pm - 3:50 pm",
     "day": "Fri",
@@ -1008,8 +982,8 @@
     "title": "Performance Optimizations for Progressive Web Apps",
     "speaker": "Chris Lorenzo",
     "room": {
-      "roomName": "Kilimanjaro Ballroom",
-      "roomId": "28023"
+      "roomId": "28023",
+      "roomName": "Kilimanjaro 2"
     },
     "rawTime": "Fri 2:50 pm - 3:50 pm",
     "day": "Fri",
