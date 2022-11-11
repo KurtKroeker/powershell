@@ -1,22 +1,26 @@
+<#
+.SYNOPSIS
+	Package the presentation bits for people.
+	Assumes that it lives in the /ps repository root.
+#>
 param(
 	[parameter(Mandatory = $true)]
-	[string]$Name,
-	[parameter(Mandatory = $true)]
-	[string]$FolderPath
+	[string]$OutputDirPath,
+	[string]$ZipName = "DevelopersLovePowershell.zip"
 )
 
-if([IO.Directory]::Exists($FolderPath) -eq $false)
-{
-	throw "Folder $FolderPath does not exist"
+$tmpDir = mkdir ([guid]::NewGuid()).tostring()
+$outputDir = New-Object System.IO.DirectoryInfo $OutputDirPath
+if(-not $outputDir.Exists){
+	$outputDir.Create()
 }
 
-$tempFolderPath = "C:\powershell\presentations\$Name"
-mkdir $tempFolderPath
-copy C:\powershell\presentations\*.pptx -Destination $tempFolderPath
-copy C:\powershell\presentations\demo_* -Destination $tempFolderPath
-copy C:\powershell\presentations\*.json	-Destination $tempFolderPath
-copy C:\powershell\presentations\*.csv -Destination $tempFolderPath
+# Copy relevant files to temp folder
+@(
+	".\demo_*.ps1",
+	".\sessions.json",
+	".\PowerShell_Presentation.pptx"
+)|%{ cp $_ $tmpDir }
 
-$dest = "C:\powershell\downloads\$Name.zip"
-Compress-Archive -Path $tempFolderPath -DestinationPath $dest -Force
-rmdir $tempFolderPath -Force -Recurse
+Compress-Archive -Path "$($tmpDir.FullName)\*.*" -DestinationPath ([system.io.path]::combine($outputDir.FullName,$ZipName)) -Force
+rmdir $tmpDir -Force -Recurse
