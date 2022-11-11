@@ -54,4 +54,6 @@ $sessions.div.div[0].ul.li
             end = $end
         };
 
-    }|select sessionId,title,speaker,room,rawTime,day,start,end|ConvertTo-Json|out-file .\sessions.json
+    }|select sessionId,title,speaker,room,rawTime,day,start,end
+    |ConvertTo-Json
+    |out-file .\sessions.json
